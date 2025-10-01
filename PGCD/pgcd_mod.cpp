@@ -4,24 +4,22 @@
 #include <cmath>
 using namespace std;
 
-// Implémentation de l'algorithme d'Euclide avec modulo
 int pgcd_modulo(int a, int b) {
     a = abs(a);
     b = abs(b);
 
-    if (a == 0 && b == 0) return 0; // cas hors précondition
+    if (a == 0 && b == 0) return 0;
     if (a == 0) return b;
     if (b == 0) return a;
 
     while (b != 0) {
-        int r = a % b; // reste de la division euclidienne
-        a = b;         // on décale
+        int r = a % b;
+        a = b;
         b = r;
     }
     return a;
 }
 
-// Affiche le résultat d'un test
 void run_test(int a, int b) {
     cout << "PGCD(" << a << ", " << b << ") = " << pgcd_modulo(a, b) << "\n";
 }
@@ -40,9 +38,8 @@ int main() {
         {25, 100},
         {13, 26},
         {14, 15},
-        {1000000000LL, 500000000LL},
-        {1836311903LL, 1134903170LL},
-        {1LL<<50, (1LL<<50) * 3}
+        {1000000000, 500000000},
+        {1836311903, 1134903170}
     };
 
     for (auto [a,b] : tests) {
