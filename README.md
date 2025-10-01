@@ -70,3 +70,51 @@ Résultats obtenus plus vite avec `pow_fast` qu'avec `pow_naif` :
 III)
 A)Pistes de réflexion
 1) On s’arrête dès que (r+1)^2 > n parce que la fonction carré est croissante: ainsi si le dernier succésseur dépasse n, alors tous les prochains dépasserons n aussi, donc r est le plus grand entier. Ce qui est la définition d'une racine carrée entière.
+
+B)Pistes d'implémentations
+Voici les résultats donnés:
+=== Version classique ===
+isqrt_classic(0) = 0
+isqrt_classic(1) = 1
+isqrt_classic(2) = (La version classique a pris 2 itérations pour n=2)
+1
+isqrt_classic(3) = (La version classique a pris 2 itérations pour n=3)
+1
+isqrt_classic(4) = (La version classique a pris 2 itérations pour n=4)
+2
+isqrt_classic(10) = (La version classique a pris 4 itérations pour n=10)
+3
+isqrt_classic(16) = (La version classique a pris 4 itérations pour n=16)
+4
+isqrt_classic(19) = (La version classique a pris 5 itérations pour n=19)
+4
+isqrt_classic(100) = (La version classique a pris 7 itérations pour n=100)
+10
+isqrt_classic(12345) = (La version classique a pris 13 itérations pour n=12345)
+111
+isqrt_classic(1000000) = (La version classique a pris 20 itérations pour n=1000000)
+1000
+
+=== Version Newton ===
+isqrt_newton(0) = 0
+isqrt_newton(1) = 1
+isqrt_newton(2) = (Newton a pris 1 itérations pour n=2)
+1
+isqrt_newton(3) = (Newton a pris 2 itérations pour n=3)
+1
+isqrt_newton(4) = (Newton a pris 1 itérations pour n=4)
+2
+isqrt_newton(10) = (Newton a pris 2 itérations pour n=10)
+3
+isqrt_newton(16) = (Newton a pris 3 itérations pour n=16)
+4
+isqrt_newton(19) = (Newton a pris 3 itérations pour n=19)
+4
+isqrt_newton(100) = (Newton a pris 4 itérations pour n=100)
+10
+isqrt_newton(12345) = (Newton a pris 9 itérations pour n=12345)
+111
+isqrt_newton(1000000) = (Newton a pris 12 itérations pour n=1000000)
+1000
+
+Ainsi nous voyons que la version de Newton prends moins d'itérations que la version classique pour un n croissant
