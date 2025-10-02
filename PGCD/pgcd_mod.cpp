@@ -8,7 +8,6 @@ int pgcd_modulo(int a, int b) {
     a = abs(a);
     b = abs(b);
 
-    if (a == 0 && b == 0) return 0;
     if (a == 0) return b;
     if (b == 0) return a;
 
