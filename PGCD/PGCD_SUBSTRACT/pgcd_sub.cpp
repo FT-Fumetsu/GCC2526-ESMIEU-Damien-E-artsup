@@ -18,6 +18,13 @@ int pgcd_sub(int a, int b) {
     return a;
 }
 
+char toLowerCase(char c) {
+    if (c >= 'A' && c <= 'Z') {
+        return c + ('a' - 'A');
+    }
+    return c;
+}
+
 void run_test(int a, int b) {
     cout << "PGCD(" << a << ", " << b << ") = " << pgcd_sub(a, b) << "\n";
 }
