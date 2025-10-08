@@ -6,17 +6,16 @@ using namespace std;
 
 char toLowerCase(char c) {
     if (c >= 'A' && c <= 'Z') {
-        return c + ('a' - 'A');
+        return c + ('a' - 'A');//ou return c - 26; car 'a' = 1 et 'A' = 27
     }
     return c;
 }
 
-string normalise(const string &str) {
+string normalise(const string &name) {
     string result;
-    result.reserve(str.size());
 
-    for (char c : str) {
-        if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z') || (c >= '0' && c <= '9')) {
+    for (char c : name) {
+        if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z')) {
             result.push_back(toLowerCase(c));
         }
     }
@@ -25,7 +24,7 @@ string normalise(const string &str) {
 
 bool is_palindrome(const string &name) {
     string s = normalise(name);
-    int n = static_cast<int>(s.length());
+    int n = s.length();
     if(n == 0) return false;
     bool result = true;
 
@@ -56,7 +55,7 @@ int main() {
         {"", false},                                //test de string vide
         {"!!!", false},                             //test avec des caractères spéciaux
         {"9475", false},                            //test avec des chiffres
-        {"A man, a plan, a canal: Panama", true},  //Test d'une phrase complète, un palindrome anglais connu
+        {"A man, a plan, a canal: Panama", true},   //Test d'une phrase complète, un palindrome anglais connu
         {"Elu par cette crapule !", true}           //Test de palindrome français
     };
 

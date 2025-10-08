@@ -8,7 +8,7 @@ int collatz_steps(long long n) {
         return -1;
     }
 
-    int longueur = 1;
+    int steps = 1;
 
     while (n != 1) {
         if (n % 2 == 0) {
@@ -16,10 +16,9 @@ int collatz_steps(long long n) {
         } else {
             n = 3 * n + 1;
         }
-        ++longueur;
+        ++steps;
     }
-
-    return longueur;
+    return steps;
 }
 
 
