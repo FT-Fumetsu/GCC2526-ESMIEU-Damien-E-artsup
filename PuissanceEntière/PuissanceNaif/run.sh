@@ -1,4 +1,4 @@
-PRG="palindrome"
+PRG="pow_naif"
 SRC="$PRG.cpp"
 OUT="build/$PRG"
 

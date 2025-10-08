@@ -1,4 +1,4 @@
-PRG="palindrome"
+PRG="collatz"
 SRC="$PRG.cpp"
 OUT="build/$PRG"
 
@@ -21,7 +21,6 @@ if [ $? -eq 0 ]; then
   echo "✅ Compilation réussie. Exécution de '$OUT'..."
   echo "--------------------------------------"
   "$OUT"
-  echo "--------------------------------------"
   echo "💡 Programme terminé"
 else
   echo "❌ Erreur : la compilation a échoué." >&2 # Envoie ce message dans les erreurs

@@ -60,8 +60,8 @@ int main() {
         {"Elu par cette crapule !", true}           //Test de palindrome français
     };
 
-    for (auto &p : tests) {
-        run_test(p.first, p.second);
+    for (auto &t : tests) {
+        run_test(t.first, t.second);
     }
     return 0;
 }

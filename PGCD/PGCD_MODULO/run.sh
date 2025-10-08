@@ -1,4 +1,4 @@
-PRG="palindrome"
+PRG="pgcd_mod"
 SRC="$PRG.cpp"
 OUT="build/$PRG"
 

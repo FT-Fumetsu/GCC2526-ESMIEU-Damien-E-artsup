@@ -1,4 +1,4 @@
-PRG="palindrome"
+PRG="anagramme"
 SRC="$PRG.cpp"
 OUT="build/$PRG"
 

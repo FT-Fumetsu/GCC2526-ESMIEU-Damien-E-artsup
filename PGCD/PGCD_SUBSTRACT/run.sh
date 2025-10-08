@@ -1,5 +1,5 @@
 PRG="pgcd_sub"
-SRC="pgcd_sub.cpp"
+SRC="$PRG.cpp"
 OUT="build/$PRG"
 
 out_dir="$(dirname "$OUT")"

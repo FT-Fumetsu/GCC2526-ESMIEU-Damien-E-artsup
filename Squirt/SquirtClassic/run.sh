@@ -1,4 +1,4 @@
-PRG="palindrome"
+PRG="isquirt_classic"
 SRC="$PRG.cpp"
 OUT="build/$PRG"
 
