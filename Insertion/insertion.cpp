@@ -1,40 +1,31 @@
-#include <iostream> //size_t
+#include <iostream>
 #include <vector>
 #include <string>
 
-using namespace std;
+ptrdiff_t naif_insertion(std::vector<int>& tab){
+    ptrdiff_t iterations = 0;
+    if(tab.size() < 2) return iterations;
 
-void Swap(vector<int>& tab, size_t id, bool &trie) {
-    int aux = tab[id];
-    tab[id] = tab[id + 1];
-    tab[id + 1] = aux;
-    trie = false;
-}
+    ptrdiff_t n = tab.size();
 
-size_t naif_bubble_sort(vector<int>& tab) {
-    size_t iterations = 0;
-    if (tab.size() < 2) return iterations;
+    for (ptrdiff_t i = 1; i < n; ++i){
+        ++iterations;
+        int key = tab[i];
+        std::ptrdiff_t j = i - 1;
 
-    bool trie = false;
-    size_t n = tab.size();
-
-    while (!trie) {
-        trie = true;
-        for (size_t i = 0; i < n - 1; ++i) {
-            ++iterations;
-            if (tab[i] > tab[i + 1]) {
-                Swap(tab, i, trie);
-            }
+        while (j >= 0 && tab[j] > key){
+            tab[j + 1] = tab[j];
+            j = j - 1;
         }
+        tab[(j + 1)] = key;
     }
     return iterations;
 }
 
-//Façon que j'ai trouvé la plus propre pour transcrire un tableau de valeurs en string
-string vec_to_string(const vector<int>& v) {
-    string s = "[";
-    for (size_t i = 0; i < v.size(); ++i) {
-        s += to_string(v[i]);
+std::string vec_to_string(const std::vector<int>& v) {
+    std::string s = "[";
+    for (ptrdiff_t i = 0; i < v.size(); ++i) {
+        s += std::to_string(v[i]);
         if (i + 1 < v.size()) s += ", ";
     }
     s += "]";
@@ -42,7 +33,7 @@ string vec_to_string(const vector<int>& v) {
 }
 
 void run_test() {
-    vector<vector<int>> tests = {
+    std::vector<std::vector<int>> tests = {
         {},                                     //Tableau de valeur nul
         {1},                                    //Tableau avec une valeur
         {2, 1},                                 //Tableau avec 2 valeurs non triées
@@ -55,9 +46,9 @@ void run_test() {
     };
 
     for (auto tab : tests) {
-        vector<int> original = tab;
-        size_t iterations = naif_bubble_sort(tab);
-        cout << "Tableau d'entrée : " << vec_to_string(original)
+        std::vector<int> original = tab;
+        ptrdiff_t iterations = naif_insertion(tab);
+        std::cout << "Tableau d'entrée : " << vec_to_string(original)
              << ", tableau trié : " << vec_to_string(tab)
              << ", nombre d'itérations : " << iterations << ".\n";
     }

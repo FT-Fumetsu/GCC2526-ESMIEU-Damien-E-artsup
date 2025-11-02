@@ -1,5 +1,6 @@
+// TODO continuer l'exo avec ce qu'il m'a donné dans le notion
 #include <iostream>
-#include <cmath>
+#include <cmath> //fabs
 #include <string>
 #include <iomanip>
 #include <algorithm>
@@ -11,13 +12,20 @@ struct Point2D{
     string name;
     double x;
     double y;
-} ;
+};
 
 bool near2D_euclid(const Point2D& a, const Point2D& b, double seuil){
     double dx = a.x - b.x;
     double dy = a.y - b.y;
     double dist = sqrt(dx * dx + dy * dy);
     return dist <= seuil;
+}
+
+bool near2D_euclid_optimised(const Point2D& a, const Point2D& b, double seuil){
+    double dx = a.x - b.x;
+    double dy = a.y - b.y;
+    double dist = dx * dx + dy * dy;
+    return dist <= seuil * seuil;
 }
 
 bool near2D_manh(const Point2D& a, const Point2D& b, double seuil){
@@ -34,13 +42,11 @@ void displayPoint(const Point2D& p){
 }
 
 bool collisionCircle(const Point2D& a, double rayonA, const Point2D& b, double rayonB){
-    double dx = a.x - b.x;
-    double dy = a.y - b.y;
-    double dist = sqrt(dx * dx + dy * dy);
-    double r = rayonA + rayonB;
-    return dist <= r;
+    double seuil = rayonA + rayonB;
+    return near2D_euclid_optimised(a, b, seuil);
 }
 
+// TODO : à refaire avec les near functions
 bool collisionRect(const vector<pair<double,double>>& rectA,
                    const vector<pair<double,double>>& rectB) 
 {
