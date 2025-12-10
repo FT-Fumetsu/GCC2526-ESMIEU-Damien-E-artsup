@@ -1,6 +1,9 @@
 #ifndef _NODE_FACTORY_HPP_
 #define _NODE_FACTORY_HPP_
 
+#include "SNode.hpp"
+#include "DNode.hpp"
+
 template <class T>
 class NodeFactory{
     public:

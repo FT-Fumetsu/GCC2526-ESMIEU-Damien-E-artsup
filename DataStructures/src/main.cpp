@@ -7,7 +7,7 @@
 
 #include "DNode.hpp"
 #include "DLinkedList.hpp"
-#include "DListIterator.hpp"clear
+#include "DListIterator.hpp"
 
 template<class DataType>
 void displayArray(Array<DataType>& arr){
@@ -26,9 +26,9 @@ void displayLinkedList(SLinkedList<DataType>& list){
     bool first = true;
     while(cur != nullptr){
         if(!first) std::cout << ", ";
-        std::cout << cur->_data;
+        std::cout << cur->data();
         first = false;
-        cur = cur->_next;
+        cur = cur->next();
     }
     std::cout << " ]";
     std::cout << " (size=" << list.count() << ")\n";
@@ -37,27 +37,27 @@ void displayLinkedList(SLinkedList<DataType>& list){
 template<class DataType>
 void displayDLinkedList(DLinkedList<DataType>& list){
     std::cout << "[ ";
-    DNode<DataType>* cur = list._head;
+    DNode<DataType>* cur = list.head();
     bool first = true;
     while(cur != nullptr){
         if(!first) std::cout << ", ";
-        std::cout << cur->_data;
+        std::cout << cur->data();
         first = false;
-        cur = cur->_next;
+        cur = cur->next();
     }
     std::cout << " ]";
 
     std::cout << "  (backwards: [ ";
-    DNode<DataType>* back = list._tail;
+    DNode<DataType>* back = list.tail();
     first = true;
     while(back != nullptr){
         if(!first) std::cout << ", ";
-        std::cout << back->_data;
+        std::cout << back->data();
         first = false;
-        back = back->_previous;
+        back = back->previous();
     }
     std::cout << " ]";
-    std::cout << ", size=" << list._count << ")\n";
+    std::cout << ", size=" << list.count() << ")\n";
 }
 
 void run_test(){
@@ -220,7 +220,7 @@ void run_test(){
     }
 
     std::cout << "Suppression jusqu'à vider la DLinkedList (removeHead en boucle)\n";
-    while(dlist._count != 0){
+    while(dlist.count() != 0){
         dlist.removeHead();
         displayDLinkedList(dlist);
     }

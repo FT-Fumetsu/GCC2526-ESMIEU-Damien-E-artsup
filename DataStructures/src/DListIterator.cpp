@@ -1,52 +1,53 @@
 #include "DListIterator.hpp"
+#include "DLinkedList.hpp"
 #include "SListExceptions.hpp"
 
 template<class DataType>
 DListIterator<DataType>::DListIterator(DLinkedList<DataType>* list) {
-    _list = list;
-    _node = list ? list->_head : nullptr;
+    list() = list;
+    node() = list->head();
 }
 
 template<class DataType>
 void DListIterator<DataType>::start() {
-    if (_list) _node = _list->_head;
+    if (list()) node() = list()->head();
 }
 
 template<class DataType>
 void DListIterator<DataType>::end() {
-    if (_list) _node = _list->_tail;
+    if (list()) node() = list()->tail();
 }
 
 template<class DataType>
 void DListIterator<DataType>::forth() {
-    if (_node) _node = _node->_next;
+    if (node()) node() = node()->next();
 }
 
 template<class DataType>
 void DListIterator<DataType>::back() {
-    if (_node) _node = _node->_previous;
+    if (node()) node() = node()->previous();
 }
 
 template<class DataType>
 DataType& DListIterator<DataType>::item() {
-    if (!_node)
+    if (!node())
         throw NodeNotFoundException("DListIterator::item() - node qui n'existe pas");
-    return _node->_data;
+    return node()->data();
 }
 
 template<class DataType>
 bool DListIterator<DataType>::isValid() {
-    return _node != nullptr;
+    return node() != nullptr;
 }
 
 template<class DataType>
 bool DListIterator<DataType>::hasNext() {
-    return _node && _node->_next != nullptr;
+    return node() && node()->next() != nullptr;
 }
 
 template<class DataType>
 bool DListIterator<DataType>::hasPrevious() {
-    return _node && _node->_previous != nullptr;
+    return node() && node()->previous() != nullptr;
 }
 
 template class DListIterator<int>;

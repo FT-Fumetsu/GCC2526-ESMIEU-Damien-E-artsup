@@ -23,6 +23,7 @@ public:
     bool hasNext();
 
     SNode<DataType>*& node() { return _node; }
+    SLinkedList<DataType>*& list() { return _list; };
 };
 
 #endif // _SLIST_ITERATOR_HPP_

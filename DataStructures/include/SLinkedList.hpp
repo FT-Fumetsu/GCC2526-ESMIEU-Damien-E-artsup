@@ -30,9 +30,9 @@ class SLinkedList{
 
     SListIterator<DataType> getIterator(); // return SListIterator<DataType>(this);
 
-    SNode<DataType>* head();
-    SNode<DataType>* tail();
-    size_t count();
+    SNode<DataType>*& head() { return _head; };
+    SNode<DataType>*& tail() { return _tail; };
+    size_t& count() { return _count; };
 };
 
 #endif // _SLINKED_LIST_HPP_
