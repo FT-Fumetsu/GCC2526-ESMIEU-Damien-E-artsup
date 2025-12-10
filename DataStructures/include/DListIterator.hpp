@@ -5,6 +5,8 @@
 
 #include <cstddef>
 
+template <class DataType> class DLinkedList;
+
 template<class DataType>
 class DListIterator {
 private:
@@ -26,7 +28,7 @@ public:
     bool hasPrevious();
 
     DNode<DataType>*& node() { return _node; }
-    DLinkedList<DataType>*& list() { return _node; };
+    DLinkedList<DataType>*& list() { return _list; };
 };
 
 #endif // _DLIST_ITERATOR_HPP_

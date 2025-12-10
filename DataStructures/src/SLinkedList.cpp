@@ -26,7 +26,7 @@ void SLinkedList<DataType>::append(DataType data){
         head() = node;
         tail() = node;
     } else {
-        tail()->_next = node;
+        tail()->next() = node;
         tail() = node;
     }
     ++count();
@@ -77,7 +77,7 @@ void SLinkedList<DataType>::removeHead(){
     if (head() == nullptr) return;
 
     SNode<DataType>* temp = head();
-    head() = head()->_next;
+    head() = head()->next();
 
     if (head() == nullptr)
         tail() = nullptr;
@@ -90,7 +90,7 @@ template <class DataType>
 void SLinkedList<DataType>::removeTail(){
     if (tail() == nullptr) return;
 
-    if (head() == _tail){
+    if (head() == tail()){
         delete head();
         head() = nullptr;
         tail() = nullptr;

@@ -9,8 +9,8 @@ SNode<DataType>::SNode() {
 
 
 template<class DataType>
-SNode<DataType>::SNode(DataType data) {
-    data() = data;
+SNode<DataType>::SNode(DataType Data) {
+    data() = Data;
     next() = nullptr;
 }
 

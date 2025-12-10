@@ -9,8 +9,8 @@ DNode<DataType>::DNode() {
 }
 
 template<class DataType>
-DNode<DataType>::DNode(DataType data) {
-    data() = data;
+DNode<DataType>::DNode(DataType Data) {
+    data() = Data;
     next() = nullptr;
     previous() = nullptr;
 }

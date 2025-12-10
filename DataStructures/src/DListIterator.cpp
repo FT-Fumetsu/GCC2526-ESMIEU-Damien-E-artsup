@@ -3,9 +3,9 @@
 #include "SListExceptions.hpp"
 
 template<class DataType>
-DListIterator<DataType>::DListIterator(DLinkedList<DataType>* list) {
-    list() = list;
-    node() = list->head();
+DListIterator<DataType>::DListIterator(DLinkedList<DataType>* List) {
+    list() = List;
+    node() = List->head();
 }
 
 template<class DataType>

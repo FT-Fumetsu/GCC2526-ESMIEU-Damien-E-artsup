@@ -5,7 +5,7 @@
 template <class DataType>
 SListIterator<DataType>::SListIterator(SLinkedList<DataType>* list){
     this->list() = list;
-    this->node() = list->head()
+    this->node() = list->head();
 }
 
 template <class DataType>
@@ -16,7 +16,7 @@ SListIterator<DataType>::SListIterator(SLinkedList<DataType>& list){
 
 template <class DataType>
 void SListIterator<DataType>::start(){
-    if(this->_list != nullptr){
+    if(this->list() != nullptr){
         this->node() = this->list()->head();
     }
 }
