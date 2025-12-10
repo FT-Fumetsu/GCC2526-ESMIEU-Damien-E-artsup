@@ -33,6 +33,10 @@ class SLinkedList{
     SNode<DataType>* head();
     SNode<DataType>* tail();
     size_t count();
+
+    bool operator== (const SLinkedList& other);
+
+    bool operator!= (const SLinkedList& other);
 };
 
 #endif // _SLINKED_LIST_HPP_

@@ -7,7 +7,7 @@
 
 #include "DNode.hpp"
 #include "DLinkedList.hpp"
-#include "DListIterator.hpp"clear
+#include "DListIterator.hpp"
 
 template<class DataType>
 void displayArray(Array<DataType>& arr){
