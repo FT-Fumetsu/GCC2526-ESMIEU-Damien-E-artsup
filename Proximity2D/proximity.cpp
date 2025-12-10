@@ -80,6 +80,7 @@ std::vector<Rectangle> generate_rectangles(size_t n, double worldSize, double mi
         double w = sizeDist(gen);
         double h = sizeDist(gen);
 
+        // parce qu'on les spawns en leur centre et du coup on veut savoir les coordonnées de leur coins et non pas de leur centre
         double halfW = w * 0.5;
         double halfH = h * 0.5;
 

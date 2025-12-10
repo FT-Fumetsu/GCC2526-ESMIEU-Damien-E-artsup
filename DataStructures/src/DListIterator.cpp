@@ -1,0 +1,53 @@
+#include "DListIterator.hpp"
+#include "SListExceptions.hpp"
+
+template<class DataType>
+DListIterator<DataType>::DListIterator(DLinkedList<DataType>* list) {
+    _list = list;
+    _node = list ? list->_head : nullptr;
+}
+
+template<class DataType>
+void DListIterator<DataType>::start() {
+    if (_list) _node = _list->_head;
+}
+
+template<class DataType>
+void DListIterator<DataType>::end() {
+    if (_list) _node = _list->_tail;
+}
+
+template<class DataType>
+void DListIterator<DataType>::forth() {
+    if (_node) _node = _node->_next;
+}
+
+template<class DataType>
+void DListIterator<DataType>::back() {
+    if (_node) _node = _node->_previous;
+}
+
+template<class DataType>
+DataType& DListIterator<DataType>::item() {
+    if (!_node)
+        throw NodeNotFoundException("DListIterator::item() - node qui n'existe pas");
+    return _node->_data;
+}
+
+template<class DataType>
+bool DListIterator<DataType>::isValid() {
+    return _node != nullptr;
+}
+
+template<class DataType>
+bool DListIterator<DataType>::hasNext() {
+    return _node && _node->_next != nullptr;
+}
+
+template<class DataType>
+bool DListIterator<DataType>::hasPrevious() {
+    return _node && _node->_previous != nullptr;
+}
+
+template class DListIterator<int>;
+template class DListIterator<double>;

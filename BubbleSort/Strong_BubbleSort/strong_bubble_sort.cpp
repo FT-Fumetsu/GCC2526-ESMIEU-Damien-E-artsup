@@ -4,6 +4,13 @@
 
 using namespace std;
 
+void Swap(vector<int>& tab, size_t id, bool &trie) {
+    int aux = tab[id];
+    tab[id] = tab[id + 1];
+    tab[id + 1] = aux;
+    trie = false;
+}
+
 size_t naif_bubble_sort(vector<int>& tab) {
     size_t iterations = 0;
     if (tab.size() < 2) return iterations;
@@ -14,9 +21,7 @@ size_t naif_bubble_sort(vector<int>& tab) {
         for (size_t j = 0; j < i; ++j) {
             ++iterations;
             if (tab[j] > tab[j + 1]) {
-                int aux = tab[j];
-                tab[j] = tab[j + 1];
-                tab[j + 1] = aux;
+                Swap(tab, i, trie);
             }
         }
         if (i == 1) break;
