@@ -1,26 +1,33 @@
 #include "DLinkedList.hpp"
+#include "DListIterator.hpp"
 #include "NodeFactory.hpp"
 #include "SListExceptions.hpp"
 
 template<class DataType>
-DLinkedList<DataType>::DLinkedList() {
+DLinkedList<DataType>::DLinkedList()
+{
     _head = nullptr;
     _tail = nullptr;
     _count = 0;
 }
 
 template<class DataType>
-DLinkedList<DataType>::~DLinkedList() {
+DLinkedList<DataType>::~DLinkedList()
+{
     while (_head != nullptr)
         removeHead();
 }
 
 template<class DataType>
-void DLinkedList<DataType>::append(DataType data) {
+void DLinkedList<DataType>::append(DataType data)
+{
     DNode<DataType>* node = NodeFactory<DataType>::createDNode(data);
-    if (_tail == nullptr) {
+    if (_tail == nullptr)
+    {
         _head = _tail = node;
-    } else {
+    }
+    else
+    {
         _tail->_next = node;
         node->_previous = _tail;
         _tail = node;
@@ -29,11 +36,15 @@ void DLinkedList<DataType>::append(DataType data) {
 }
 
 template<class DataType>
-void DLinkedList<DataType>::prepend(DataType data) {
+void DLinkedList<DataType>::prepend(DataType data)
+{
     DNode<DataType>* node = NodeFactory<DataType>::createDNode(data);
-    if (_head == nullptr) {
+    if (_head == nullptr)
+    {
         _head = _tail = node;
-    } else {
+    }
+    else
+    {
         node->_next = _head;
         _head->_previous = node;
         _head = node;
@@ -42,12 +53,15 @@ void DLinkedList<DataType>::prepend(DataType data) {
 }
 
 template<class DataType>
-void DLinkedList<DataType>::insert(DListIterator<DataType>& itr, DataType data) {
-    if (_head == nullptr || !itr.isValid()) {
+void DLinkedList<DataType>::insert(DListIterator<DataType>& itr, DataType data)
+{
+    if (_head == nullptr || !itr.isValid())
+    {
         prepend(data);
         return;
     }
-    if (!itr.isValid()) {
+    if (!itr.isValid())
+    {
         append(data);
         return;
     }
@@ -57,7 +71,8 @@ void DLinkedList<DataType>::insert(DListIterator<DataType>& itr, DataType data) 
 }
 
 template<class DataType>
-void DLinkedList<DataType>::removeHead() {
+void DLinkedList<DataType>::removeHead()
+{
     if (!_head) return;
     DNode<DataType>* temp = _head;
     _head = _head->_next;
@@ -68,7 +83,8 @@ void DLinkedList<DataType>::removeHead() {
 }
 
 template<class DataType>
-void DLinkedList<DataType>::removeTail() {
+void DLinkedList<DataType>::removeTail()
+{
     if (!_tail) return;
     DNode<DataType>* temp = _tail;
     _tail = _tail->_previous;
@@ -79,15 +95,18 @@ void DLinkedList<DataType>::removeTail() {
 }
 
 template<class DataType>
-void DLinkedList<DataType>::remove(DListIterator<DataType>& itr) {
+void DLinkedList<DataType>::remove(DListIterator<DataType>& itr)
+{
     if (!itr.isValid()) return;
     DNode<DataType>* target = itr.node();
-    if (target == _head) {
+    if (target == _head)
+    {
         removeHead();
         itr.node() = _head;
         return;
     }
-    if (target == _tail) {
+    if (target == _tail)
+    {
         removeTail();
         itr.node() = nullptr;
         return;
@@ -104,7 +123,8 @@ void DLinkedList<DataType>::remove(DListIterator<DataType>& itr) {
 }
 
 template<class DataType>
-DListIterator<DataType> DLinkedList<DataType>::getIterator() {
+DListIterator<DataType> DLinkedList<DataType>::getIterator()
+{
     return DListIterator<DataType>(this);
 }
 
