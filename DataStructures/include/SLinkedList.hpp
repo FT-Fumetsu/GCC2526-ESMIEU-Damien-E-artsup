@@ -22,7 +22,7 @@ class SLinkedList{
 
     void append(DataType data); // Ajouter après la tail et nouvelle node = tail
     void prepend(DataType data); // Ajouter avant la head et nouvelle node = head
-    void insert(SListIterator<DataType>& itr, DataType data);
+    void insertAfter(SListIterator<DataType>& itr, DataType data);
 
     void removeHead();
     void removeTail();

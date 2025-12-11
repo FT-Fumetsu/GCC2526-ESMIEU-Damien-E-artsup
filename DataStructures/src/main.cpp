@@ -188,7 +188,7 @@ void run_test(){
         DListIterator<int> itr = dlist.getIterator();
         itr.start();
         itr.forth();
-        dlist.insert(itr, 15);
+        dlist.insertBefore(itr, 15);
         std::cout << "Après insert via itr : ";
         displayDLinkedList(dlist);
     }

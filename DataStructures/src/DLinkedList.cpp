@@ -42,8 +42,10 @@ void DLinkedList<DataType>::prepend(DataType data) {
     ++count();
 }
 
+// TODO faire insertAfter
+
 template<class DataType>
-void DLinkedList<DataType>::insert(DListIterator<DataType>& itr, DataType data) {
+void DLinkedList<DataType>::insertBefore(DListIterator<DataType>& itr, DataType data) {
     if (head() == nullptr || !itr.isValid()) {
         prepend(data);
         return;

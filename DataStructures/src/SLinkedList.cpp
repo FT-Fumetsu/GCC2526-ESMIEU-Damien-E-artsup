@@ -6,14 +6,14 @@
 
 template <class DataType>
 SLinkedList<DataType>::SLinkedList() {
-    head() = nullptr;
-    tail() = nullptr;
-    count() = 0;
+    _head = nullptr;
+    _tail = nullptr;
+    _count = 0;
 }
 
 template <class DataType>
 SLinkedList<DataType>::~SLinkedList(){
-    while (head() != nullptr){
+    while (_head != nullptr){
         removeHead();
     }
 }
@@ -22,31 +22,33 @@ template <class DataType>
 void SLinkedList<DataType>::append(DataType data){
     SNode<DataType>* node = NodeFactory<DataType>::createSNode(data);    
 
-    if (tail() == nullptr){
-        head() = node;
-        tail() = node;
+    if (_tail == nullptr){
+        _head = node;
+        _tail = node;
     } else {
-        tail()->next() = node;
-        tail() = node;
+        _tail->next() = node;
+        _tail = node;
     }
-    ++count();
+    ++_count;
 }
 
 template <class DataType>
 void SLinkedList<DataType>::prepend(DataType data){
     SNode<DataType>* node = NodeFactory<DataType>::createSNode(data);
-    node->next() = head();
-    head() = node;
+    node->next() = _head;
+    _head = node;
 
-    if (tail() == nullptr)
-        tail() = node;
+    if (_tail == nullptr)
+        _tail = node;
 
-    ++count();
+    ++_count;
 }
 
+// TODO modifier pour faire insert after (pas de while pour insert before)
+
 template <class DataType>
-void SLinkedList<DataType>::insert(SListIterator<DataType>& itr, DataType data){
-    if (head() == nullptr || itr.node() == head()){
+void SLinkedList<DataType>::insertAfter(SListIterator<DataType>& itr, DataType data){
+    if (_head == nullptr || itr.node() == _head){
         prepend(data);
         return;
     }
@@ -56,7 +58,7 @@ void SLinkedList<DataType>::insert(SListIterator<DataType>& itr, DataType data){
         return;
     }
 
-    SNode<DataType>* prev = head();
+    SNode<DataType>* prev = _head;
     while (prev != nullptr && prev->next() != itr.node()){
         prev = prev->next();
     }
@@ -69,44 +71,44 @@ void SLinkedList<DataType>::insert(SListIterator<DataType>& itr, DataType data){
     SNode<DataType>* node = NodeFactory<DataType>::createSNode(data);
     node->next() = itr.node();
     prev->next() = node;
-    ++count();
+    ++_count;
 }
 
 template <class DataType>
 void SLinkedList<DataType>::removeHead(){
-    if (head() == nullptr) return;
+    if (_head == nullptr) return;
 
-    SNode<DataType>* temp = head();
-    head() = head()->next();
+    SNode<DataType>* temp = _head;
+    _head = _head->next();
 
-    if (head() == nullptr)
-        tail() = nullptr;
+    if (_head == nullptr)
+        _tail = nullptr;
 
     delete temp;
-    --count();
+    --_count;
 }
 
 template <class DataType>
 void SLinkedList<DataType>::removeTail(){
-    if (tail() == nullptr) return;
+    if (_tail == nullptr) return;
 
-    if (head() == tail()){
-        delete head();
-        head() = nullptr;
-        tail() = nullptr;
-        count() = 0;
+    if (_head == _tail){
+        delete _head;
+        _head = nullptr;
+        _tail = nullptr;
+        _count = 0;
         return;
     }
 
-    SNode<DataType>* cur = head();
-    while (cur->next() != tail()){
+    SNode<DataType>* cur = _head;
+    while (cur->next() != _tail){
         cur = cur->next();
     }
 
-    delete tail();
-    tail() = cur;
-    tail()->next() = nullptr;
-    --count();
+    delete _tail;
+    _tail = cur;
+    _tail->next() = nullptr;
+    --_count;
 }
 
 template <class DataType>
@@ -115,13 +117,13 @@ void SLinkedList<DataType>::remove(SListIterator<DataType>& itr){
 
     SNode<DataType>* target = itr.node();
 
-    if (target == head()){
+    if (target == _head){
         removeHead();
-        itr.node() = head();
+        itr.node() = _head;
         return;
     }
 
-    SNode<DataType>* prev = head();
+    SNode<DataType>* prev = _head;
     while (prev != nullptr && prev->next() != target){
         prev = prev->next();
     }
@@ -132,15 +134,15 @@ void SLinkedList<DataType>::remove(SListIterator<DataType>& itr){
 
     prev->next() = target->next();
 
-    if (target == tail()){
-        tail() = prev;
-        tail()->next() = nullptr;
+    if (target == _tail){
+        _tail = prev;
+        _tail->next() = nullptr;
     }
 
     itr.node() = target->next();
 
     delete target;
-    --count();
+    --_count;
 }
 
 template class SLinkedList<int>;
