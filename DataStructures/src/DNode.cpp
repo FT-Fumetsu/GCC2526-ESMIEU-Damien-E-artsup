@@ -43,3 +43,6 @@ void DNode<DataType>::insertBefore(DataType data) {
 
 template class DNode<int>;
 template class DNode<double>;
+
+template class DNode<Tree<int>*>;
+template class DNode<TreeIterator<int>*>;

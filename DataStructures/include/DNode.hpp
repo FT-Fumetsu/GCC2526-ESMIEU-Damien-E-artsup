@@ -3,6 +3,12 @@
 
 #include <cstddef>
 
+template<class>
+class Tree;
+
+template<class>
+class TreeIterator;
+
 template<class DataType>
 class DNode {
     private:

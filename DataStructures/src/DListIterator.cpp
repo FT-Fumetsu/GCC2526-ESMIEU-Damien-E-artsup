@@ -52,3 +52,6 @@ bool DListIterator<DataType>::hasPrevious() {
 
 template class DListIterator<int>;
 template class DListIterator<double>;
+
+template class DListIterator<Tree<int>*>;
+template class DListIterator<TreeIterator<int>*>;

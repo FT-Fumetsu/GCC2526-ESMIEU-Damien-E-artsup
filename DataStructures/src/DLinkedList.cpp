@@ -132,3 +132,5 @@ DListIterator<DataType> DLinkedList<DataType>::getIterator() {
 
 template class DLinkedList<int>;
 template class DLinkedList<double>;
+template class DLinkedList<Tree<int>*>;
+template class DLinkedList<TreeIterator<int>*>;

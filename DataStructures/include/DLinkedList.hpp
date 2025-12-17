@@ -8,6 +8,13 @@
 template<class>
 class DListIterator;
 
+template<class>
+class Tree;
+
+template<class>
+class TreeIterator;
+
+
 template<class DataType>
 class DLinkedList {
 private: 
