@@ -9,12 +9,15 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/src/Array.cpp" "CMakeFiles/tp-data.dir/src/Array.cpp.o" "gcc" "CMakeFiles/tp-data.dir/src/Array.cpp.o.d"
+  "/mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/src/BinaryTree.cpp" "CMakeFiles/tp-data.dir/src/BinaryTree.cpp.o" "gcc" "CMakeFiles/tp-data.dir/src/BinaryTree.cpp.o.d"
   "/mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/src/DLinkedList.cpp" "CMakeFiles/tp-data.dir/src/DLinkedList.cpp.o" "gcc" "CMakeFiles/tp-data.dir/src/DLinkedList.cpp.o.d"
   "/mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/src/DListIterator.cpp" "CMakeFiles/tp-data.dir/src/DListIterator.cpp.o" "gcc" "CMakeFiles/tp-data.dir/src/DListIterator.cpp.o.d"
   "/mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/src/DNode.cpp" "CMakeFiles/tp-data.dir/src/DNode.cpp.o" "gcc" "CMakeFiles/tp-data.dir/src/DNode.cpp.o.d"
   "/mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/src/SLinkedList.cpp" "CMakeFiles/tp-data.dir/src/SLinkedList.cpp.o" "gcc" "CMakeFiles/tp-data.dir/src/SLinkedList.cpp.o.d"
   "/mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/src/SListIterator.cpp" "CMakeFiles/tp-data.dir/src/SListIterator.cpp.o" "gcc" "CMakeFiles/tp-data.dir/src/SListIterator.cpp.o.d"
   "/mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/src/SNode.cpp" "CMakeFiles/tp-data.dir/src/SNode.cpp.o" "gcc" "CMakeFiles/tp-data.dir/src/SNode.cpp.o.d"
+  "/mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/src/Tree.cpp" "CMakeFiles/tp-data.dir/src/Tree.cpp.o" "gcc" "CMakeFiles/tp-data.dir/src/Tree.cpp.o.d"
+  "/mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/src/TreeIterator.cpp" "CMakeFiles/tp-data.dir/src/TreeIterator.cpp.o" "gcc" "CMakeFiles/tp-data.dir/src/TreeIterator.cpp.o.d"
   "/mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/src/main.cpp" "CMakeFiles/tp-data.dir/src/main.cpp.o" "gcc" "CMakeFiles/tp-data.dir/src/main.cpp.o.d"
   )
 

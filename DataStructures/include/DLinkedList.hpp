@@ -19,11 +19,10 @@ public:
     DLinkedList();
     ~DLinkedList();
 
-// TODO faire insert after et insert before (doublement chainée)
-
     void append(DataType data);
     void prepend(DataType data);
     void insertBefore(DListIterator<DataType>& itr, DataType data);
+    void insertAfter(DListIterator<DataType>& itr, DataType data);
 
     void removeHead();
     void removeTail();

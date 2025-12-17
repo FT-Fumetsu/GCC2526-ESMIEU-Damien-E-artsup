@@ -160,4 +160,9 @@ CMakeFiles/tp-data.dir/src/main.cpp.o: \
  /mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/include/DLinkedList.hpp \
  /mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/include/DNode.hpp \
  /mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/include/SListIterator.hpp \
- /mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/include/DListIterator.hpp
+ /mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/include/DListIterator.hpp \
+ /mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/include/Tree.hpp \
+ /mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/include/DLinkedList.hpp \
+ /mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/include/DListIterator.hpp \
+ /mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/include/TreeIterator.hpp \
+ /mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/include/Tree.hpp

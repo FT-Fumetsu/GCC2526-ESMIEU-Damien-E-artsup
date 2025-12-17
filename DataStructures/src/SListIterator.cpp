@@ -4,46 +4,46 @@
 
 template <class DataType>
 SListIterator<DataType>::SListIterator(SLinkedList<DataType>* list){
-    this->list() = list;
-    this->node() = list->head();
+    this->_list = list;
+    this->_node = list->head();
 }
 
 template <class DataType>
 SListIterator<DataType>::SListIterator(SLinkedList<DataType>& list){
-    this->list() = &list;
-    this->node() = list.head();
+    this->_list = &list;
+    this->_node = list.head();
 }
 
 template <class DataType>
 void SListIterator<DataType>::start(){
-    if(this->list() != nullptr){
-        this->node() = this->list()->head();
+    if(this->_list != nullptr){
+        this->_node = this->_list->head();
     }
 }
 
 template <class DataType>
 void SListIterator<DataType>::forth(){
-    if(this->node() != nullptr){
-        this->node() = this->node()->next();
+    if(this->_node != nullptr){
+        this->_node = this->_node->next();
     }
 }
 
 template <class DataType>
 DataType& SListIterator<DataType>::item(){
-    if(this->node() == nullptr){
+    if(this->_node == nullptr){
         throw NodeNotFoundException("SListIterator::item() - node qui n'existe pas");
     }
-    return this->node()->data();
+    return this->_node->data();
 }
 
 template <class DataType>
 bool SListIterator<DataType>::isValid(){
-    return this->node() != nullptr;
+    return this->_node != nullptr;
 }
 
 template <class DataType>
 bool SListIterator<DataType>::hasNext(){
-    return this->node() != nullptr && this->node()->next() != nullptr;
+    return this->_node != nullptr && this->_node->next() != nullptr;
 }
 
 template class SListIterator<int>;

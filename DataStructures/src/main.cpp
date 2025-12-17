@@ -1,6 +1,7 @@
 #include <iostream>
 
 #include "Array.hpp"
+
 #include "SNode.hpp"
 #include "SLinkedList.hpp"
 #include "SListIterator.hpp"
@@ -8,6 +9,11 @@
 #include "DNode.hpp"
 #include "DLinkedList.hpp"
 #include "DListIterator.hpp"
+
+#include "Tree.hpp"
+#include "TreeIterator.hpp"
+
+// ----------------------Displays---------------------------------
 
 template<class DataType>
 void displayArray(Array<DataType>& arr){
@@ -59,6 +65,26 @@ void displayDLinkedList(DLinkedList<DataType>& list){
     std::cout << " ]";
     std::cout << ", size=" << list.count() << ")\n";
 }
+
+template<class DataType>
+void displayTree(Data::Tree<DataType>* node, int depth = 0)
+{
+    if (!node) return;
+
+    for (int i = 0; i < depth; ++i)
+        std::cout << "  ";
+
+    std::cout << "- " << node->Data() << "\n";
+
+    auto itr = node->Children().getIterator();
+    while (itr.isValid())
+    {
+        displayTree(itr.item(), depth + 1);
+        itr.forth();
+    }
+}
+
+// ----------------------Tests------------------------------------
 
 void run_test(){
     std::cout << "\n=== Lancement du programme de structures de données ===\n\n";
@@ -233,8 +259,85 @@ void run_test(){
 
     std::cout << "\n--- Fin des tests DLinkedList ---\n\n";
     //
+    // TREE TESTS
     //
-    //
+    std::cout << "\n--- Tests pour Tree<int> ---\n";
+
+    using Data::Tree;
+    using Data::TreeIterator;
+
+    // Création de la racine
+    Tree<int>* root = new Tree<int>(1);
+    TreeIterator<int> itr(root);
+
+    std::cout << "Création de l'arbre :\n";
+    displayTree(root);
+    std::cout << "Total nodes = " << root->count() << "\n\n";
+
+    // =======================
+    // Ajout d'enfants à la racine
+    // =======================
+    std::cout << "Ajout enfants à la racine (2, 3)\n";
+    itr.appendChild(2);
+    itr.appendChild(3);
+
+    displayTree(root);
+    std::cout << "Total nodes = " << root->count() << "\n\n";
+
+    // =======================
+    // Descente dans le noeud 2
+    // =======================
+    std::cout << "Descente dans le noeud 2\n";
+    itr.goDown(); // va sur 2
+
+    itr.appendChild(4);
+    itr.appendChild(5);
+
+    displayTree(root);
+    std::cout << "Total nodes = " << root->count() << "\n\n";
+
+    // =======================
+    // Navigation enfant
+    // =======================
+    std::cout << "Navigation parmi les enfants de 2 :\n";
+    itr.childStart();
+    while (itr.isValidChild())
+    {
+        std::cout << " Child = " << itr.itemChild()->Data() << "\n";
+        itr.childForth();
+    }
+    std::cout << "\n";
+
+    // =======================
+    // Remontée vers la racine
+    // =======================
+    std::cout << "Retour à la racine\n";
+    itr.goRoot();
+    displayTree(root);
+    std::cout << "\n";
+
+    // =======================
+    // Suppression d'un enfant
+    // =======================
+    std::cout << "Suppression du premier enfant de la racine (2)\n";
+    itr.childStart();
+    if (itr.isValidChild())
+    {
+        auto childItr = root->Children().getIterator();
+        root->Children().remove(childItr);
+    }
+
+    displayTree(root);
+    std::cout << "Total nodes = " << root->count() << "\n\n";
+
+    // =======================
+    // Destruction complète
+    // =======================
+    std::cout << "Destruction complète de l'arbre\n";
+    delete root;
+
+    std::cout << "\n--- Fin des tests Tree ---\n";
+
     std::cout << "\n=== Fin des tests ===\n\n";
 }
 

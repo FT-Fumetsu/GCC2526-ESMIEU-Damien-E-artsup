@@ -153,6 +153,30 @@ src/Array.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp-data.dir/build.make CMakeFiles/tp-data.dir/src/Array.cpp.s
 .PHONY : src/Array.cpp.s
 
+src/BinaryTree.o: src/BinaryTree.cpp.o
+.PHONY : src/BinaryTree.o
+
+# target to build an object file
+src/BinaryTree.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp-data.dir/build.make CMakeFiles/tp-data.dir/src/BinaryTree.cpp.o
+.PHONY : src/BinaryTree.cpp.o
+
+src/BinaryTree.i: src/BinaryTree.cpp.i
+.PHONY : src/BinaryTree.i
+
+# target to preprocess a source file
+src/BinaryTree.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp-data.dir/build.make CMakeFiles/tp-data.dir/src/BinaryTree.cpp.i
+.PHONY : src/BinaryTree.cpp.i
+
+src/BinaryTree.s: src/BinaryTree.cpp.s
+.PHONY : src/BinaryTree.s
+
+# target to generate assembly for a file
+src/BinaryTree.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp-data.dir/build.make CMakeFiles/tp-data.dir/src/BinaryTree.cpp.s
+.PHONY : src/BinaryTree.cpp.s
+
 src/DLinkedList.o: src/DLinkedList.cpp.o
 .PHONY : src/DLinkedList.o
 
@@ -297,6 +321,54 @@ src/SNode.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp-data.dir/build.make CMakeFiles/tp-data.dir/src/SNode.cpp.s
 .PHONY : src/SNode.cpp.s
 
+src/Tree.o: src/Tree.cpp.o
+.PHONY : src/Tree.o
+
+# target to build an object file
+src/Tree.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp-data.dir/build.make CMakeFiles/tp-data.dir/src/Tree.cpp.o
+.PHONY : src/Tree.cpp.o
+
+src/Tree.i: src/Tree.cpp.i
+.PHONY : src/Tree.i
+
+# target to preprocess a source file
+src/Tree.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp-data.dir/build.make CMakeFiles/tp-data.dir/src/Tree.cpp.i
+.PHONY : src/Tree.cpp.i
+
+src/Tree.s: src/Tree.cpp.s
+.PHONY : src/Tree.s
+
+# target to generate assembly for a file
+src/Tree.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp-data.dir/build.make CMakeFiles/tp-data.dir/src/Tree.cpp.s
+.PHONY : src/Tree.cpp.s
+
+src/TreeIterator.o: src/TreeIterator.cpp.o
+.PHONY : src/TreeIterator.o
+
+# target to build an object file
+src/TreeIterator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp-data.dir/build.make CMakeFiles/tp-data.dir/src/TreeIterator.cpp.o
+.PHONY : src/TreeIterator.cpp.o
+
+src/TreeIterator.i: src/TreeIterator.cpp.i
+.PHONY : src/TreeIterator.i
+
+# target to preprocess a source file
+src/TreeIterator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp-data.dir/build.make CMakeFiles/tp-data.dir/src/TreeIterator.cpp.i
+.PHONY : src/TreeIterator.cpp.i
+
+src/TreeIterator.s: src/TreeIterator.cpp.s
+.PHONY : src/TreeIterator.s
+
+# target to generate assembly for a file
+src/TreeIterator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp-data.dir/build.make CMakeFiles/tp-data.dir/src/TreeIterator.cpp.s
+.PHONY : src/TreeIterator.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -333,6 +405,9 @@ help:
 	@echo "... src/Array.o"
 	@echo "... src/Array.i"
 	@echo "... src/Array.s"
+	@echo "... src/BinaryTree.o"
+	@echo "... src/BinaryTree.i"
+	@echo "... src/BinaryTree.s"
 	@echo "... src/DLinkedList.o"
 	@echo "... src/DLinkedList.i"
 	@echo "... src/DLinkedList.s"
@@ -351,6 +426,12 @@ help:
 	@echo "... src/SNode.o"
 	@echo "... src/SNode.i"
 	@echo "... src/SNode.s"
+	@echo "... src/Tree.o"
+	@echo "... src/Tree.i"
+	@echo "... src/Tree.s"
+	@echo "... src/TreeIterator.o"
+	@echo "... src/TreeIterator.i"
+	@echo "... src/TreeIterator.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

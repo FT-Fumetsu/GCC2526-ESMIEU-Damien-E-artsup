@@ -44,11 +44,9 @@ void SLinkedList<DataType>::prepend(DataType data){
     ++_count;
 }
 
-// TODO modifier pour faire insert after (pas de while pour insert before)
-
 template <class DataType>
 void SLinkedList<DataType>::insertAfter(SListIterator<DataType>& itr, DataType data){
-    if (_head == nullptr || itr.node() == _head){
+    if (_head == nullptr){
         prepend(data);
         return;
     }
@@ -58,19 +56,7 @@ void SLinkedList<DataType>::insertAfter(SListIterator<DataType>& itr, DataType d
         return;
     }
 
-    SNode<DataType>* prev = _head;
-    while (prev != nullptr && prev->next() != itr.node()){
-        prev = prev->next();
-    }
-
-    if (prev == nullptr){
-        append(data);
-        return;
-    }
-
-    SNode<DataType>* node = NodeFactory<DataType>::createSNode(data);
-    node->next() = itr.node();
-    prev->next() = node;
+    itr.node()->insertAfter(data);
     ++_count;
 }
 

@@ -3,27 +3,27 @@
 
 template<class DataType>
 SNode<DataType>::SNode() {
-    data() = DataType();
-    next() = nullptr;
+    _data = DataType();
+    _next = nullptr;
 }
 
 
 template<class DataType>
-SNode<DataType>::SNode(DataType Data) {
-    data() = Data;
-    next() = nullptr;
+SNode<DataType>::SNode(DataType data) {
+    _data = data;
+    _next = nullptr;
 }
 
 template<class DataType>
 SNode<DataType>::~SNode(){
-    next() = nullptr;
+    _next = nullptr;
 }
 
 template<class DataType>
 void SNode<DataType>::insertAfter(DataType data){
     SNode<DataType>* newNode = NodeFactory<DataType>::createSNode(data);
-    newNode->next() = this->next(); // '->' parce que pointeur == (*newNode)._next = (*this)._next
-    this->next() = newNode;
+    newNode->_next = this->_next; // '->' parce que pointeur == (*newNode)._next = (*this)._next
+    this->_next = newNode;
 }
 
 template class SNode<int>;
