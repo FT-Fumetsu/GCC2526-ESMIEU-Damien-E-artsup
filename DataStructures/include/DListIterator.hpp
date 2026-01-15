@@ -5,30 +5,33 @@
 
 #include <cstddef>
 
-template <class DataType> class DLinkedList;
+namespace Data{
 
-template<class DataType>
-class DListIterator {
-private:
-    DLinkedList<DataType>* _list;
-    DNode<DataType>* _node;
+    template <class DataType> class DLinkedList;
+    template<class DataType>
+    class DListIterator {
+    private:
+        DLinkedList<DataType>* _list;
+        DNode<DataType>* _node;
 
-public:
-    DListIterator(DLinkedList<DataType>* list = nullptr);
+    public:
+        DListIterator(DLinkedList<DataType>* list = nullptr);
 
-    void start();
-    void end();
-    void forth();
-    void back();
+        void start();
+        void end();
+        void forth();
+        void back();
 
-    DataType& item();
-    
-    bool isValid();
-    bool hasNext();
-    bool hasPrevious();
+        DataType& item();
+        
+        bool isValid();
+        bool hasNext();
+        bool hasPrevious();
 
-    DNode<DataType>*& node() { return _node; }
-    DLinkedList<DataType>*& list() { return _list; };
-};
+        DNode<DataType>*& node() { return _node; }
+        DLinkedList<DataType>*& list() { return _list; };
+    };
+}
+
 
 #endif // _DLIST_ITERATOR_HPP_

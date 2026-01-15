@@ -25,12 +25,6 @@ namespace Data
         void childForth();
         void childBack();
 
-        void appendChild(const Datatype& data);
-        void prependChild(const Datatype& data);
-        void insertChildBefore(DListIterator<Node*>& itr, const Datatype& data);
-        void insertChildAfter(DListIterator<Node*>& itr, const Datatype& data);
-        void removeChild(DListIterator<Node*>& itr);
-
         bool isValidChild();
         Node* itemChild();
 

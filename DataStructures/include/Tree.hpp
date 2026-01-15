@@ -23,9 +23,15 @@ namespace Data
         int count();
         void destroy();
 
+        void appendChild(const Datatype& data);
+        void prependChild(const Datatype& data);
+        void insertChildBefore(DListIterator<Node*>& itr, const Datatype& data);
+        void insertChildAfter(DListIterator<Node*>& itr, const Datatype& data);
+        void removeChild(DListIterator<Node*>& itr);
+
         Datatype& Data() { return _data; };
         Node*& Parent() { return _parent; };
-        DLinkedList<Node*> Children() { return _children; };
+        DLinkedList<Node*>& Children() { return _children; };
     };
 }
 

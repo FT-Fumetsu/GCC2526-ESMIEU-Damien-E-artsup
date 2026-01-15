@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/include
 
-CXX_FLAGS =  -Wall -pedantic -std=c++17 -std=gnu++17
+CXX_FLAGS =  -Wall -pedantic -std=c++17 -g -std=gnu++17
 

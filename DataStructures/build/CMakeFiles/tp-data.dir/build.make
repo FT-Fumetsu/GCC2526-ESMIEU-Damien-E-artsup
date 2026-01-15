@@ -97,10 +97,24 @@ CMakeFiles/tp-data.dir/src/BinaryTree.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tp-data.dir/src/BinaryTree.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/src/BinaryTree.cpp -o CMakeFiles/tp-data.dir/src/BinaryTree.cpp.s
 
+CMakeFiles/tp-data.dir/src/BinaryTreeTraversal.cpp.o: CMakeFiles/tp-data.dir/flags.make
+CMakeFiles/tp-data.dir/src/BinaryTreeTraversal.cpp.o: /mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/src/BinaryTreeTraversal.cpp
+CMakeFiles/tp-data.dir/src/BinaryTreeTraversal.cpp.o: CMakeFiles/tp-data.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/tp-data.dir/src/BinaryTreeTraversal.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tp-data.dir/src/BinaryTreeTraversal.cpp.o -MF CMakeFiles/tp-data.dir/src/BinaryTreeTraversal.cpp.o.d -o CMakeFiles/tp-data.dir/src/BinaryTreeTraversal.cpp.o -c /mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/src/BinaryTreeTraversal.cpp
+
+CMakeFiles/tp-data.dir/src/BinaryTreeTraversal.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tp-data.dir/src/BinaryTreeTraversal.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/src/BinaryTreeTraversal.cpp > CMakeFiles/tp-data.dir/src/BinaryTreeTraversal.cpp.i
+
+CMakeFiles/tp-data.dir/src/BinaryTreeTraversal.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tp-data.dir/src/BinaryTreeTraversal.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/src/BinaryTreeTraversal.cpp -o CMakeFiles/tp-data.dir/src/BinaryTreeTraversal.cpp.s
+
 CMakeFiles/tp-data.dir/src/DLinkedList.cpp.o: CMakeFiles/tp-data.dir/flags.make
 CMakeFiles/tp-data.dir/src/DLinkedList.cpp.o: /mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/src/DLinkedList.cpp
 CMakeFiles/tp-data.dir/src/DLinkedList.cpp.o: CMakeFiles/tp-data.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/tp-data.dir/src/DLinkedList.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/tp-data.dir/src/DLinkedList.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tp-data.dir/src/DLinkedList.cpp.o -MF CMakeFiles/tp-data.dir/src/DLinkedList.cpp.o.d -o CMakeFiles/tp-data.dir/src/DLinkedList.cpp.o -c /mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/src/DLinkedList.cpp
 
 CMakeFiles/tp-data.dir/src/DLinkedList.cpp.i: cmake_force
@@ -114,7 +128,7 @@ CMakeFiles/tp-data.dir/src/DLinkedList.cpp.s: cmake_force
 CMakeFiles/tp-data.dir/src/DListIterator.cpp.o: CMakeFiles/tp-data.dir/flags.make
 CMakeFiles/tp-data.dir/src/DListIterator.cpp.o: /mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/src/DListIterator.cpp
 CMakeFiles/tp-data.dir/src/DListIterator.cpp.o: CMakeFiles/tp-data.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/tp-data.dir/src/DListIterator.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/tp-data.dir/src/DListIterator.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tp-data.dir/src/DListIterator.cpp.o -MF CMakeFiles/tp-data.dir/src/DListIterator.cpp.o.d -o CMakeFiles/tp-data.dir/src/DListIterator.cpp.o -c /mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/src/DListIterator.cpp
 
 CMakeFiles/tp-data.dir/src/DListIterator.cpp.i: cmake_force
@@ -128,7 +142,7 @@ CMakeFiles/tp-data.dir/src/DListIterator.cpp.s: cmake_force
 CMakeFiles/tp-data.dir/src/DNode.cpp.o: CMakeFiles/tp-data.dir/flags.make
 CMakeFiles/tp-data.dir/src/DNode.cpp.o: /mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/src/DNode.cpp
 CMakeFiles/tp-data.dir/src/DNode.cpp.o: CMakeFiles/tp-data.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/tp-data.dir/src/DNode.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/tp-data.dir/src/DNode.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tp-data.dir/src/DNode.cpp.o -MF CMakeFiles/tp-data.dir/src/DNode.cpp.o.d -o CMakeFiles/tp-data.dir/src/DNode.cpp.o -c /mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/src/DNode.cpp
 
 CMakeFiles/tp-data.dir/src/DNode.cpp.i: cmake_force
@@ -139,10 +153,38 @@ CMakeFiles/tp-data.dir/src/DNode.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tp-data.dir/src/DNode.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/src/DNode.cpp -o CMakeFiles/tp-data.dir/src/DNode.cpp.s
 
+CMakeFiles/tp-data.dir/src/Graph.cpp.o: CMakeFiles/tp-data.dir/flags.make
+CMakeFiles/tp-data.dir/src/Graph.cpp.o: /mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/src/Graph.cpp
+CMakeFiles/tp-data.dir/src/Graph.cpp.o: CMakeFiles/tp-data.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/tp-data.dir/src/Graph.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tp-data.dir/src/Graph.cpp.o -MF CMakeFiles/tp-data.dir/src/Graph.cpp.o.d -o CMakeFiles/tp-data.dir/src/Graph.cpp.o -c /mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/src/Graph.cpp
+
+CMakeFiles/tp-data.dir/src/Graph.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tp-data.dir/src/Graph.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/src/Graph.cpp > CMakeFiles/tp-data.dir/src/Graph.cpp.i
+
+CMakeFiles/tp-data.dir/src/Graph.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tp-data.dir/src/Graph.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/src/Graph.cpp -o CMakeFiles/tp-data.dir/src/Graph.cpp.s
+
+CMakeFiles/tp-data.dir/src/RunAllTests.cpp.o: CMakeFiles/tp-data.dir/flags.make
+CMakeFiles/tp-data.dir/src/RunAllTests.cpp.o: /mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/src/RunAllTests.cpp
+CMakeFiles/tp-data.dir/src/RunAllTests.cpp.o: CMakeFiles/tp-data.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/tp-data.dir/src/RunAllTests.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tp-data.dir/src/RunAllTests.cpp.o -MF CMakeFiles/tp-data.dir/src/RunAllTests.cpp.o.d -o CMakeFiles/tp-data.dir/src/RunAllTests.cpp.o -c /mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/src/RunAllTests.cpp
+
+CMakeFiles/tp-data.dir/src/RunAllTests.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tp-data.dir/src/RunAllTests.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/src/RunAllTests.cpp > CMakeFiles/tp-data.dir/src/RunAllTests.cpp.i
+
+CMakeFiles/tp-data.dir/src/RunAllTests.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tp-data.dir/src/RunAllTests.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/src/RunAllTests.cpp -o CMakeFiles/tp-data.dir/src/RunAllTests.cpp.s
+
 CMakeFiles/tp-data.dir/src/SLinkedList.cpp.o: CMakeFiles/tp-data.dir/flags.make
 CMakeFiles/tp-data.dir/src/SLinkedList.cpp.o: /mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/src/SLinkedList.cpp
 CMakeFiles/tp-data.dir/src/SLinkedList.cpp.o: CMakeFiles/tp-data.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/tp-data.dir/src/SLinkedList.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/tp-data.dir/src/SLinkedList.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tp-data.dir/src/SLinkedList.cpp.o -MF CMakeFiles/tp-data.dir/src/SLinkedList.cpp.o.d -o CMakeFiles/tp-data.dir/src/SLinkedList.cpp.o -c /mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/src/SLinkedList.cpp
 
 CMakeFiles/tp-data.dir/src/SLinkedList.cpp.i: cmake_force
@@ -156,7 +198,7 @@ CMakeFiles/tp-data.dir/src/SLinkedList.cpp.s: cmake_force
 CMakeFiles/tp-data.dir/src/SListIterator.cpp.o: CMakeFiles/tp-data.dir/flags.make
 CMakeFiles/tp-data.dir/src/SListIterator.cpp.o: /mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/src/SListIterator.cpp
 CMakeFiles/tp-data.dir/src/SListIterator.cpp.o: CMakeFiles/tp-data.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/tp-data.dir/src/SListIterator.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/tp-data.dir/src/SListIterator.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tp-data.dir/src/SListIterator.cpp.o -MF CMakeFiles/tp-data.dir/src/SListIterator.cpp.o.d -o CMakeFiles/tp-data.dir/src/SListIterator.cpp.o -c /mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/src/SListIterator.cpp
 
 CMakeFiles/tp-data.dir/src/SListIterator.cpp.i: cmake_force
@@ -170,7 +212,7 @@ CMakeFiles/tp-data.dir/src/SListIterator.cpp.s: cmake_force
 CMakeFiles/tp-data.dir/src/SNode.cpp.o: CMakeFiles/tp-data.dir/flags.make
 CMakeFiles/tp-data.dir/src/SNode.cpp.o: /mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/src/SNode.cpp
 CMakeFiles/tp-data.dir/src/SNode.cpp.o: CMakeFiles/tp-data.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/tp-data.dir/src/SNode.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/tp-data.dir/src/SNode.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tp-data.dir/src/SNode.cpp.o -MF CMakeFiles/tp-data.dir/src/SNode.cpp.o.d -o CMakeFiles/tp-data.dir/src/SNode.cpp.o -c /mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/src/SNode.cpp
 
 CMakeFiles/tp-data.dir/src/SNode.cpp.i: cmake_force
@@ -181,10 +223,94 @@ CMakeFiles/tp-data.dir/src/SNode.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tp-data.dir/src/SNode.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/src/SNode.cpp -o CMakeFiles/tp-data.dir/src/SNode.cpp.s
 
+CMakeFiles/tp-data.dir/src/TestArray.cpp.o: CMakeFiles/tp-data.dir/flags.make
+CMakeFiles/tp-data.dir/src/TestArray.cpp.o: /mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/src/TestArray.cpp
+CMakeFiles/tp-data.dir/src/TestArray.cpp.o: CMakeFiles/tp-data.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/tp-data.dir/src/TestArray.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tp-data.dir/src/TestArray.cpp.o -MF CMakeFiles/tp-data.dir/src/TestArray.cpp.o.d -o CMakeFiles/tp-data.dir/src/TestArray.cpp.o -c /mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/src/TestArray.cpp
+
+CMakeFiles/tp-data.dir/src/TestArray.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tp-data.dir/src/TestArray.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/src/TestArray.cpp > CMakeFiles/tp-data.dir/src/TestArray.cpp.i
+
+CMakeFiles/tp-data.dir/src/TestArray.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tp-data.dir/src/TestArray.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/src/TestArray.cpp -o CMakeFiles/tp-data.dir/src/TestArray.cpp.s
+
+CMakeFiles/tp-data.dir/src/TestBinaryTree.cpp.o: CMakeFiles/tp-data.dir/flags.make
+CMakeFiles/tp-data.dir/src/TestBinaryTree.cpp.o: /mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/src/TestBinaryTree.cpp
+CMakeFiles/tp-data.dir/src/TestBinaryTree.cpp.o: CMakeFiles/tp-data.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/tp-data.dir/src/TestBinaryTree.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tp-data.dir/src/TestBinaryTree.cpp.o -MF CMakeFiles/tp-data.dir/src/TestBinaryTree.cpp.o.d -o CMakeFiles/tp-data.dir/src/TestBinaryTree.cpp.o -c /mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/src/TestBinaryTree.cpp
+
+CMakeFiles/tp-data.dir/src/TestBinaryTree.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tp-data.dir/src/TestBinaryTree.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/src/TestBinaryTree.cpp > CMakeFiles/tp-data.dir/src/TestBinaryTree.cpp.i
+
+CMakeFiles/tp-data.dir/src/TestBinaryTree.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tp-data.dir/src/TestBinaryTree.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/src/TestBinaryTree.cpp -o CMakeFiles/tp-data.dir/src/TestBinaryTree.cpp.s
+
+CMakeFiles/tp-data.dir/src/TestDLinkedList.cpp.o: CMakeFiles/tp-data.dir/flags.make
+CMakeFiles/tp-data.dir/src/TestDLinkedList.cpp.o: /mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/src/TestDLinkedList.cpp
+CMakeFiles/tp-data.dir/src/TestDLinkedList.cpp.o: CMakeFiles/tp-data.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/tp-data.dir/src/TestDLinkedList.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tp-data.dir/src/TestDLinkedList.cpp.o -MF CMakeFiles/tp-data.dir/src/TestDLinkedList.cpp.o.d -o CMakeFiles/tp-data.dir/src/TestDLinkedList.cpp.o -c /mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/src/TestDLinkedList.cpp
+
+CMakeFiles/tp-data.dir/src/TestDLinkedList.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tp-data.dir/src/TestDLinkedList.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/src/TestDLinkedList.cpp > CMakeFiles/tp-data.dir/src/TestDLinkedList.cpp.i
+
+CMakeFiles/tp-data.dir/src/TestDLinkedList.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tp-data.dir/src/TestDLinkedList.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/src/TestDLinkedList.cpp -o CMakeFiles/tp-data.dir/src/TestDLinkedList.cpp.s
+
+CMakeFiles/tp-data.dir/src/TestGraph.cpp.o: CMakeFiles/tp-data.dir/flags.make
+CMakeFiles/tp-data.dir/src/TestGraph.cpp.o: /mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/src/TestGraph.cpp
+CMakeFiles/tp-data.dir/src/TestGraph.cpp.o: CMakeFiles/tp-data.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/tp-data.dir/src/TestGraph.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tp-data.dir/src/TestGraph.cpp.o -MF CMakeFiles/tp-data.dir/src/TestGraph.cpp.o.d -o CMakeFiles/tp-data.dir/src/TestGraph.cpp.o -c /mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/src/TestGraph.cpp
+
+CMakeFiles/tp-data.dir/src/TestGraph.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tp-data.dir/src/TestGraph.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/src/TestGraph.cpp > CMakeFiles/tp-data.dir/src/TestGraph.cpp.i
+
+CMakeFiles/tp-data.dir/src/TestGraph.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tp-data.dir/src/TestGraph.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/src/TestGraph.cpp -o CMakeFiles/tp-data.dir/src/TestGraph.cpp.s
+
+CMakeFiles/tp-data.dir/src/TestSLinkedList.cpp.o: CMakeFiles/tp-data.dir/flags.make
+CMakeFiles/tp-data.dir/src/TestSLinkedList.cpp.o: /mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/src/TestSLinkedList.cpp
+CMakeFiles/tp-data.dir/src/TestSLinkedList.cpp.o: CMakeFiles/tp-data.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/tp-data.dir/src/TestSLinkedList.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tp-data.dir/src/TestSLinkedList.cpp.o -MF CMakeFiles/tp-data.dir/src/TestSLinkedList.cpp.o.d -o CMakeFiles/tp-data.dir/src/TestSLinkedList.cpp.o -c /mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/src/TestSLinkedList.cpp
+
+CMakeFiles/tp-data.dir/src/TestSLinkedList.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tp-data.dir/src/TestSLinkedList.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/src/TestSLinkedList.cpp > CMakeFiles/tp-data.dir/src/TestSLinkedList.cpp.i
+
+CMakeFiles/tp-data.dir/src/TestSLinkedList.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tp-data.dir/src/TestSLinkedList.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/src/TestSLinkedList.cpp -o CMakeFiles/tp-data.dir/src/TestSLinkedList.cpp.s
+
+CMakeFiles/tp-data.dir/src/TestTree.cpp.o: CMakeFiles/tp-data.dir/flags.make
+CMakeFiles/tp-data.dir/src/TestTree.cpp.o: /mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/src/TestTree.cpp
+CMakeFiles/tp-data.dir/src/TestTree.cpp.o: CMakeFiles/tp-data.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/tp-data.dir/src/TestTree.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tp-data.dir/src/TestTree.cpp.o -MF CMakeFiles/tp-data.dir/src/TestTree.cpp.o.d -o CMakeFiles/tp-data.dir/src/TestTree.cpp.o -c /mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/src/TestTree.cpp
+
+CMakeFiles/tp-data.dir/src/TestTree.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tp-data.dir/src/TestTree.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/src/TestTree.cpp > CMakeFiles/tp-data.dir/src/TestTree.cpp.i
+
+CMakeFiles/tp-data.dir/src/TestTree.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tp-data.dir/src/TestTree.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/src/TestTree.cpp -o CMakeFiles/tp-data.dir/src/TestTree.cpp.s
+
 CMakeFiles/tp-data.dir/src/Tree.cpp.o: CMakeFiles/tp-data.dir/flags.make
 CMakeFiles/tp-data.dir/src/Tree.cpp.o: /mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/src/Tree.cpp
 CMakeFiles/tp-data.dir/src/Tree.cpp.o: CMakeFiles/tp-data.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/tp-data.dir/src/Tree.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/tp-data.dir/src/Tree.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tp-data.dir/src/Tree.cpp.o -MF CMakeFiles/tp-data.dir/src/Tree.cpp.o.d -o CMakeFiles/tp-data.dir/src/Tree.cpp.o -c /mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/src/Tree.cpp
 
 CMakeFiles/tp-data.dir/src/Tree.cpp.i: cmake_force
@@ -198,7 +324,7 @@ CMakeFiles/tp-data.dir/src/Tree.cpp.s: cmake_force
 CMakeFiles/tp-data.dir/src/TreeIterator.cpp.o: CMakeFiles/tp-data.dir/flags.make
 CMakeFiles/tp-data.dir/src/TreeIterator.cpp.o: /mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/src/TreeIterator.cpp
 CMakeFiles/tp-data.dir/src/TreeIterator.cpp.o: CMakeFiles/tp-data.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/tp-data.dir/src/TreeIterator.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/tp-data.dir/src/TreeIterator.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tp-data.dir/src/TreeIterator.cpp.o -MF CMakeFiles/tp-data.dir/src/TreeIterator.cpp.o.d -o CMakeFiles/tp-data.dir/src/TreeIterator.cpp.o -c /mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/src/TreeIterator.cpp
 
 CMakeFiles/tp-data.dir/src/TreeIterator.cpp.i: cmake_force
@@ -212,7 +338,7 @@ CMakeFiles/tp-data.dir/src/TreeIterator.cpp.s: cmake_force
 CMakeFiles/tp-data.dir/src/main.cpp.o: CMakeFiles/tp-data.dir/flags.make
 CMakeFiles/tp-data.dir/src/main.cpp.o: /mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/src/main.cpp
 CMakeFiles/tp-data.dir/src/main.cpp.o: CMakeFiles/tp-data.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/tp-data.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/tp-data.dir/src/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tp-data.dir/src/main.cpp.o -MF CMakeFiles/tp-data.dir/src/main.cpp.o.d -o CMakeFiles/tp-data.dir/src/main.cpp.o -c /mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/src/main.cpp
 
 CMakeFiles/tp-data.dir/src/main.cpp.i: cmake_force
@@ -227,12 +353,21 @@ CMakeFiles/tp-data.dir/src/main.cpp.s: cmake_force
 tp__data_OBJECTS = \
 "CMakeFiles/tp-data.dir/src/Array.cpp.o" \
 "CMakeFiles/tp-data.dir/src/BinaryTree.cpp.o" \
+"CMakeFiles/tp-data.dir/src/BinaryTreeTraversal.cpp.o" \
 "CMakeFiles/tp-data.dir/src/DLinkedList.cpp.o" \
 "CMakeFiles/tp-data.dir/src/DListIterator.cpp.o" \
 "CMakeFiles/tp-data.dir/src/DNode.cpp.o" \
+"CMakeFiles/tp-data.dir/src/Graph.cpp.o" \
+"CMakeFiles/tp-data.dir/src/RunAllTests.cpp.o" \
 "CMakeFiles/tp-data.dir/src/SLinkedList.cpp.o" \
 "CMakeFiles/tp-data.dir/src/SListIterator.cpp.o" \
 "CMakeFiles/tp-data.dir/src/SNode.cpp.o" \
+"CMakeFiles/tp-data.dir/src/TestArray.cpp.o" \
+"CMakeFiles/tp-data.dir/src/TestBinaryTree.cpp.o" \
+"CMakeFiles/tp-data.dir/src/TestDLinkedList.cpp.o" \
+"CMakeFiles/tp-data.dir/src/TestGraph.cpp.o" \
+"CMakeFiles/tp-data.dir/src/TestSLinkedList.cpp.o" \
+"CMakeFiles/tp-data.dir/src/TestTree.cpp.o" \
 "CMakeFiles/tp-data.dir/src/Tree.cpp.o" \
 "CMakeFiles/tp-data.dir/src/TreeIterator.cpp.o" \
 "CMakeFiles/tp-data.dir/src/main.cpp.o"
@@ -242,18 +377,27 @@ tp__data_EXTERNAL_OBJECTS =
 
 tp-data: CMakeFiles/tp-data.dir/src/Array.cpp.o
 tp-data: CMakeFiles/tp-data.dir/src/BinaryTree.cpp.o
+tp-data: CMakeFiles/tp-data.dir/src/BinaryTreeTraversal.cpp.o
 tp-data: CMakeFiles/tp-data.dir/src/DLinkedList.cpp.o
 tp-data: CMakeFiles/tp-data.dir/src/DListIterator.cpp.o
 tp-data: CMakeFiles/tp-data.dir/src/DNode.cpp.o
+tp-data: CMakeFiles/tp-data.dir/src/Graph.cpp.o
+tp-data: CMakeFiles/tp-data.dir/src/RunAllTests.cpp.o
 tp-data: CMakeFiles/tp-data.dir/src/SLinkedList.cpp.o
 tp-data: CMakeFiles/tp-data.dir/src/SListIterator.cpp.o
 tp-data: CMakeFiles/tp-data.dir/src/SNode.cpp.o
+tp-data: CMakeFiles/tp-data.dir/src/TestArray.cpp.o
+tp-data: CMakeFiles/tp-data.dir/src/TestBinaryTree.cpp.o
+tp-data: CMakeFiles/tp-data.dir/src/TestDLinkedList.cpp.o
+tp-data: CMakeFiles/tp-data.dir/src/TestGraph.cpp.o
+tp-data: CMakeFiles/tp-data.dir/src/TestSLinkedList.cpp.o
+tp-data: CMakeFiles/tp-data.dir/src/TestTree.cpp.o
 tp-data: CMakeFiles/tp-data.dir/src/Tree.cpp.o
 tp-data: CMakeFiles/tp-data.dir/src/TreeIterator.cpp.o
 tp-data: CMakeFiles/tp-data.dir/src/main.cpp.o
 tp-data: CMakeFiles/tp-data.dir/build.make
 tp-data: CMakeFiles/tp-data.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable tp-data"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Linking CXX executable tp-data"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/tp-data.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

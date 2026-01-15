@@ -1,11 +1,18 @@
 #include "TreeIterator.hpp"
 
+#include <iostream>
+
 namespace Data{
 
     template <class Datatype>
     TreeIterator<Datatype>::TreeIterator(Node* node)
-        : _node(node),
-          _childItr(node->Children().getIterator()){
+        : _node(node){
+            std::cout << "Initializing TreeIterator at node with data: " << _node->Data() << "\n";
+
+            if (_node)
+            {
+                _childItr = _node->Children().getIterator();
+            }
 
           }
 
@@ -70,55 +77,6 @@ namespace Data{
     void TreeIterator<Datatype>::childBack()
     {
         _childItr.back();
-    }
-
-    template <class Datatype>
-    void TreeIterator<Datatype>::appendChild(const Datatype& data)
-    {
-        Node* child = new Node(data);
-        child->Parent() = _node;
-        _node->Children().append(child);
-        resetIterator();
-    }
-
-    template <class Datatype>
-    void TreeIterator<Datatype>::prependChild(const Datatype& data)
-    {
-        Node* child = new Node(data);
-        child->Parent() = _node;
-        _node->Children().prepend(child);
-        resetIterator();
-    }
-
-    template <class Datatype>
-    void TreeIterator<Datatype>::insertChildBefore(DListIterator<Node*>& itr, const Datatype& data)
-    {
-        Node* child = new Node(data);
-        child->Parent() = _node;
-        _node->Children().insertBefore(itr, child);
-        resetIterator();
-    }
-
-    template <class Datatype>
-    void TreeIterator<Datatype>::insertChildAfter(DListIterator<Node*>& itr, const Datatype& data)
-    {
-        Node* child = new Node(data);
-        child->Parent() = _node;
-        _node->Children().insertAfter(itr, child);
-        resetIterator();
-    }
-
-    template <class Datatype>
-    void TreeIterator<Datatype>::removeChild(DListIterator<Node*>& itr)
-    {
-        if (!itr.isValid()) return;
-
-        Node* child = itr.item();
-        child->destroy();
-        delete child;
-
-        _node->Children().remove(itr);
-        resetIterator();
     }
 
     template <class Datatype>

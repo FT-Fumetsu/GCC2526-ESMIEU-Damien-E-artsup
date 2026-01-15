@@ -5,41 +5,42 @@
 #include "SListIterator.hpp"
 #include <cstddef>
 
-template<class>
-class DListIterator;
+namespace Data{
+    template<class>
+    class DListIterator;
 
-template<class>
-class Tree;
+    template<class>
+    class Tree;
 
-template<class>
-class TreeIterator;
+    template<class>
+    class TreeIterator;
+    template<class DataType>
+    class DLinkedList {
+    private: 
+        DNode<DataType>* _head;
+        DNode<DataType>* _tail;
+        size_t _count;
 
+    public:
+        DLinkedList();
+        ~DLinkedList();
 
-template<class DataType>
-class DLinkedList {
-private: 
-    DNode<DataType>* _head;
-    DNode<DataType>* _tail;
-    size_t _count;
+        void append(DataType data);
+        void prepend(DataType data);
+        void insertBefore(DListIterator<DataType>& itr, DataType data);
+        void insertAfter(DListIterator<DataType>& itr, DataType data);
 
-public:
-    DLinkedList();
-    ~DLinkedList();
+        void removeHead();
+        void removeTail();
+        void remove(DListIterator<DataType>& itr);
 
-    void append(DataType data);
-    void prepend(DataType data);
-    void insertBefore(DListIterator<DataType>& itr, DataType data);
-    void insertAfter(DListIterator<DataType>& itr, DataType data);
+        DListIterator<DataType> getIterator();
 
-    void removeHead();
-    void removeTail();
-    void remove(DListIterator<DataType>& itr);
+        DNode<DataType>*& head() { return _head; };
+        DNode<DataType>*& tail() { return _tail; };
+        size_t& count() { return _count; };
+    };
+}
 
-    DListIterator<DataType> getIterator();
-
-    DNode<DataType>*& head() { return _head; };
-    DNode<DataType>*& tail() { return _tail; };
-    size_t& count() { return _count; };
-};
 
 #endif // _DLINKED_LIST_HPP_

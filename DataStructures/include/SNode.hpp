@@ -3,21 +3,24 @@
 
 #include <cstddef>
 
-template<class DataType>
-class SNode{
-    private:
-    DataType _data;
-    SNode<DataType>* _next;
+namespace Data{
+    template<class DataType>
+    class SNode{
+        private:
+        DataType _data;
+        SNode<DataType>* _next;
 
-    public:
-    SNode();
-    SNode(DataType data);
-    ~SNode();
+        public:
+        SNode();
+        SNode(DataType data);
+        ~SNode();
 
-    void insertAfter(DataType data);
+        void insertAfter(DataType data);
 
-    DataType& data() { return _data; };
-    SNode<DataType>*& next() { return _next; };
-};
+        DataType& data() { return _data; };
+        SNode<DataType>*& next() { return _next; };
+    };
+}
+
 
 #endif // _SNode_HPP_

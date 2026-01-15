@@ -177,6 +177,30 @@ src/BinaryTree.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp-data.dir/build.make CMakeFiles/tp-data.dir/src/BinaryTree.cpp.s
 .PHONY : src/BinaryTree.cpp.s
 
+src/BinaryTreeTraversal.o: src/BinaryTreeTraversal.cpp.o
+.PHONY : src/BinaryTreeTraversal.o
+
+# target to build an object file
+src/BinaryTreeTraversal.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp-data.dir/build.make CMakeFiles/tp-data.dir/src/BinaryTreeTraversal.cpp.o
+.PHONY : src/BinaryTreeTraversal.cpp.o
+
+src/BinaryTreeTraversal.i: src/BinaryTreeTraversal.cpp.i
+.PHONY : src/BinaryTreeTraversal.i
+
+# target to preprocess a source file
+src/BinaryTreeTraversal.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp-data.dir/build.make CMakeFiles/tp-data.dir/src/BinaryTreeTraversal.cpp.i
+.PHONY : src/BinaryTreeTraversal.cpp.i
+
+src/BinaryTreeTraversal.s: src/BinaryTreeTraversal.cpp.s
+.PHONY : src/BinaryTreeTraversal.s
+
+# target to generate assembly for a file
+src/BinaryTreeTraversal.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp-data.dir/build.make CMakeFiles/tp-data.dir/src/BinaryTreeTraversal.cpp.s
+.PHONY : src/BinaryTreeTraversal.cpp.s
+
 src/DLinkedList.o: src/DLinkedList.cpp.o
 .PHONY : src/DLinkedList.o
 
@@ -249,6 +273,54 @@ src/DNode.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp-data.dir/build.make CMakeFiles/tp-data.dir/src/DNode.cpp.s
 .PHONY : src/DNode.cpp.s
 
+src/Graph.o: src/Graph.cpp.o
+.PHONY : src/Graph.o
+
+# target to build an object file
+src/Graph.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp-data.dir/build.make CMakeFiles/tp-data.dir/src/Graph.cpp.o
+.PHONY : src/Graph.cpp.o
+
+src/Graph.i: src/Graph.cpp.i
+.PHONY : src/Graph.i
+
+# target to preprocess a source file
+src/Graph.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp-data.dir/build.make CMakeFiles/tp-data.dir/src/Graph.cpp.i
+.PHONY : src/Graph.cpp.i
+
+src/Graph.s: src/Graph.cpp.s
+.PHONY : src/Graph.s
+
+# target to generate assembly for a file
+src/Graph.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp-data.dir/build.make CMakeFiles/tp-data.dir/src/Graph.cpp.s
+.PHONY : src/Graph.cpp.s
+
+src/RunAllTests.o: src/RunAllTests.cpp.o
+.PHONY : src/RunAllTests.o
+
+# target to build an object file
+src/RunAllTests.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp-data.dir/build.make CMakeFiles/tp-data.dir/src/RunAllTests.cpp.o
+.PHONY : src/RunAllTests.cpp.o
+
+src/RunAllTests.i: src/RunAllTests.cpp.i
+.PHONY : src/RunAllTests.i
+
+# target to preprocess a source file
+src/RunAllTests.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp-data.dir/build.make CMakeFiles/tp-data.dir/src/RunAllTests.cpp.i
+.PHONY : src/RunAllTests.cpp.i
+
+src/RunAllTests.s: src/RunAllTests.cpp.s
+.PHONY : src/RunAllTests.s
+
+# target to generate assembly for a file
+src/RunAllTests.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp-data.dir/build.make CMakeFiles/tp-data.dir/src/RunAllTests.cpp.s
+.PHONY : src/RunAllTests.cpp.s
+
 src/SLinkedList.o: src/SLinkedList.cpp.o
 .PHONY : src/SLinkedList.o
 
@@ -320,6 +392,150 @@ src/SNode.s: src/SNode.cpp.s
 src/SNode.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp-data.dir/build.make CMakeFiles/tp-data.dir/src/SNode.cpp.s
 .PHONY : src/SNode.cpp.s
+
+src/TestArray.o: src/TestArray.cpp.o
+.PHONY : src/TestArray.o
+
+# target to build an object file
+src/TestArray.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp-data.dir/build.make CMakeFiles/tp-data.dir/src/TestArray.cpp.o
+.PHONY : src/TestArray.cpp.o
+
+src/TestArray.i: src/TestArray.cpp.i
+.PHONY : src/TestArray.i
+
+# target to preprocess a source file
+src/TestArray.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp-data.dir/build.make CMakeFiles/tp-data.dir/src/TestArray.cpp.i
+.PHONY : src/TestArray.cpp.i
+
+src/TestArray.s: src/TestArray.cpp.s
+.PHONY : src/TestArray.s
+
+# target to generate assembly for a file
+src/TestArray.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp-data.dir/build.make CMakeFiles/tp-data.dir/src/TestArray.cpp.s
+.PHONY : src/TestArray.cpp.s
+
+src/TestBinaryTree.o: src/TestBinaryTree.cpp.o
+.PHONY : src/TestBinaryTree.o
+
+# target to build an object file
+src/TestBinaryTree.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp-data.dir/build.make CMakeFiles/tp-data.dir/src/TestBinaryTree.cpp.o
+.PHONY : src/TestBinaryTree.cpp.o
+
+src/TestBinaryTree.i: src/TestBinaryTree.cpp.i
+.PHONY : src/TestBinaryTree.i
+
+# target to preprocess a source file
+src/TestBinaryTree.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp-data.dir/build.make CMakeFiles/tp-data.dir/src/TestBinaryTree.cpp.i
+.PHONY : src/TestBinaryTree.cpp.i
+
+src/TestBinaryTree.s: src/TestBinaryTree.cpp.s
+.PHONY : src/TestBinaryTree.s
+
+# target to generate assembly for a file
+src/TestBinaryTree.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp-data.dir/build.make CMakeFiles/tp-data.dir/src/TestBinaryTree.cpp.s
+.PHONY : src/TestBinaryTree.cpp.s
+
+src/TestDLinkedList.o: src/TestDLinkedList.cpp.o
+.PHONY : src/TestDLinkedList.o
+
+# target to build an object file
+src/TestDLinkedList.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp-data.dir/build.make CMakeFiles/tp-data.dir/src/TestDLinkedList.cpp.o
+.PHONY : src/TestDLinkedList.cpp.o
+
+src/TestDLinkedList.i: src/TestDLinkedList.cpp.i
+.PHONY : src/TestDLinkedList.i
+
+# target to preprocess a source file
+src/TestDLinkedList.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp-data.dir/build.make CMakeFiles/tp-data.dir/src/TestDLinkedList.cpp.i
+.PHONY : src/TestDLinkedList.cpp.i
+
+src/TestDLinkedList.s: src/TestDLinkedList.cpp.s
+.PHONY : src/TestDLinkedList.s
+
+# target to generate assembly for a file
+src/TestDLinkedList.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp-data.dir/build.make CMakeFiles/tp-data.dir/src/TestDLinkedList.cpp.s
+.PHONY : src/TestDLinkedList.cpp.s
+
+src/TestGraph.o: src/TestGraph.cpp.o
+.PHONY : src/TestGraph.o
+
+# target to build an object file
+src/TestGraph.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp-data.dir/build.make CMakeFiles/tp-data.dir/src/TestGraph.cpp.o
+.PHONY : src/TestGraph.cpp.o
+
+src/TestGraph.i: src/TestGraph.cpp.i
+.PHONY : src/TestGraph.i
+
+# target to preprocess a source file
+src/TestGraph.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp-data.dir/build.make CMakeFiles/tp-data.dir/src/TestGraph.cpp.i
+.PHONY : src/TestGraph.cpp.i
+
+src/TestGraph.s: src/TestGraph.cpp.s
+.PHONY : src/TestGraph.s
+
+# target to generate assembly for a file
+src/TestGraph.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp-data.dir/build.make CMakeFiles/tp-data.dir/src/TestGraph.cpp.s
+.PHONY : src/TestGraph.cpp.s
+
+src/TestSLinkedList.o: src/TestSLinkedList.cpp.o
+.PHONY : src/TestSLinkedList.o
+
+# target to build an object file
+src/TestSLinkedList.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp-data.dir/build.make CMakeFiles/tp-data.dir/src/TestSLinkedList.cpp.o
+.PHONY : src/TestSLinkedList.cpp.o
+
+src/TestSLinkedList.i: src/TestSLinkedList.cpp.i
+.PHONY : src/TestSLinkedList.i
+
+# target to preprocess a source file
+src/TestSLinkedList.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp-data.dir/build.make CMakeFiles/tp-data.dir/src/TestSLinkedList.cpp.i
+.PHONY : src/TestSLinkedList.cpp.i
+
+src/TestSLinkedList.s: src/TestSLinkedList.cpp.s
+.PHONY : src/TestSLinkedList.s
+
+# target to generate assembly for a file
+src/TestSLinkedList.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp-data.dir/build.make CMakeFiles/tp-data.dir/src/TestSLinkedList.cpp.s
+.PHONY : src/TestSLinkedList.cpp.s
+
+src/TestTree.o: src/TestTree.cpp.o
+.PHONY : src/TestTree.o
+
+# target to build an object file
+src/TestTree.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp-data.dir/build.make CMakeFiles/tp-data.dir/src/TestTree.cpp.o
+.PHONY : src/TestTree.cpp.o
+
+src/TestTree.i: src/TestTree.cpp.i
+.PHONY : src/TestTree.i
+
+# target to preprocess a source file
+src/TestTree.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp-data.dir/build.make CMakeFiles/tp-data.dir/src/TestTree.cpp.i
+.PHONY : src/TestTree.cpp.i
+
+src/TestTree.s: src/TestTree.cpp.s
+.PHONY : src/TestTree.s
+
+# target to generate assembly for a file
+src/TestTree.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp-data.dir/build.make CMakeFiles/tp-data.dir/src/TestTree.cpp.s
+.PHONY : src/TestTree.cpp.s
 
 src/Tree.o: src/Tree.cpp.o
 .PHONY : src/Tree.o
@@ -408,6 +624,9 @@ help:
 	@echo "... src/BinaryTree.o"
 	@echo "... src/BinaryTree.i"
 	@echo "... src/BinaryTree.s"
+	@echo "... src/BinaryTreeTraversal.o"
+	@echo "... src/BinaryTreeTraversal.i"
+	@echo "... src/BinaryTreeTraversal.s"
 	@echo "... src/DLinkedList.o"
 	@echo "... src/DLinkedList.i"
 	@echo "... src/DLinkedList.s"
@@ -417,6 +636,12 @@ help:
 	@echo "... src/DNode.o"
 	@echo "... src/DNode.i"
 	@echo "... src/DNode.s"
+	@echo "... src/Graph.o"
+	@echo "... src/Graph.i"
+	@echo "... src/Graph.s"
+	@echo "... src/RunAllTests.o"
+	@echo "... src/RunAllTests.i"
+	@echo "... src/RunAllTests.s"
 	@echo "... src/SLinkedList.o"
 	@echo "... src/SLinkedList.i"
 	@echo "... src/SLinkedList.s"
@@ -426,6 +651,24 @@ help:
 	@echo "... src/SNode.o"
 	@echo "... src/SNode.i"
 	@echo "... src/SNode.s"
+	@echo "... src/TestArray.o"
+	@echo "... src/TestArray.i"
+	@echo "... src/TestArray.s"
+	@echo "... src/TestBinaryTree.o"
+	@echo "... src/TestBinaryTree.i"
+	@echo "... src/TestBinaryTree.s"
+	@echo "... src/TestDLinkedList.o"
+	@echo "... src/TestDLinkedList.i"
+	@echo "... src/TestDLinkedList.s"
+	@echo "... src/TestGraph.o"
+	@echo "... src/TestGraph.i"
+	@echo "... src/TestGraph.s"
+	@echo "... src/TestSLinkedList.o"
+	@echo "... src/TestSLinkedList.i"
+	@echo "... src/TestSLinkedList.s"
+	@echo "... src/TestTree.o"
+	@echo "... src/TestTree.i"
+	@echo "... src/TestTree.s"
 	@echo "... src/Tree.o"
 	@echo "... src/Tree.i"
 	@echo "... src/Tree.s"

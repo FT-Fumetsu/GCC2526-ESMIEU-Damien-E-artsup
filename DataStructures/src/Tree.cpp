@@ -40,19 +40,14 @@ namespace Data{
     template<class Datatype>
     void Tree<Datatype>::destroy()
     {
+        if(_children.head() == nullptr) { return; }
         DListIterator<Node*> itr = _children.getIterator();
 
         while (itr.isValid())
         {
             Node* child = itr.item();
-
-            if (child)
-            {
-                child->destroy();
-                delete child;
-            }
-
             itr.forth();
+            delete child;
         }
 
         while (_children.count() > 0)
@@ -61,6 +56,52 @@ namespace Data{
         }
 
         _parent = nullptr;
+    }
+
+    template<class Datatype>
+    void Tree<Datatype>::appendChild(const Datatype& data)
+    {
+        Node* child = new Node(data);
+        child->_parent = this;
+        _children.append(child);
+    }
+
+    template<class Datatype>
+    void Tree<Datatype>::prependChild(const Datatype& data)
+    {
+        Node* child = new Node(data);
+        child->_parent = this;
+        _children.prepend(child);
+    }
+
+    template<class Datatype>
+    void Tree<Datatype>::insertChildBefore(DListIterator<Node*>& itr, const Datatype& data)
+    {
+        if (!itr.isValid()) return;
+
+        Node* child = new Node(data);
+        child->_parent = this;
+        _children.insertBefore(itr, child);
+    }
+
+    template<class Datatype>
+    void Tree<Datatype>::insertChildAfter(DListIterator<Node*>& itr, const Datatype& data)
+    {
+        if (!itr.isValid()) return;
+
+        Node* child = new Node(data);
+        child->_parent = this;
+        _children.insertAfter(itr, child);
+    }
+
+    template<class Datatype>
+    void Tree<Datatype>::removeChild(DListIterator<Node*>& itr)
+    {
+        if (!itr.isValid()) return;
+
+        Node* child = itr.item();
+        _children.remove(itr);
+        delete child;
     }
 
     template class Tree<int>;

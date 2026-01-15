@@ -18,7 +18,7 @@ if [[ $1 = "-a" ]]; then
   mkdir build
   cd build
   echo "# Running cmake"
-  cmake ..
+  cmake  -DCMAKE_BUILD_TYPE=Debug ..
   echo "# Building the projet"
   make
 elif [[ $1 = "-m" ]]; then

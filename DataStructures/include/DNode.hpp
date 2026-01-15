@@ -3,30 +3,33 @@
 
 #include <cstddef>
 
-template<class>
-class Tree;
+namespace Data{
+    template<class>
+    class Tree;
 
-template<class>
-class TreeIterator;
+    template<class>
+    class TreeIterator;
 
-template<class DataType>
-class DNode {
-    private:
-    DataType _data;
-    DNode<DataType>* _next;
-    DNode<DataType>* _previous;
+    template<class DataType>
+    class DNode {
+        private:
+        DataType _data;
+        DNode<DataType>* _next;
+        DNode<DataType>* _previous;
 
-    public:
-    DNode();
-    DNode(DataType data);
-    ~DNode();
+        public:
+        DNode();
+        DNode(DataType data);
+        ~DNode();
 
-    void insertAfter(DataType data);
-    void insertBefore(DataType data);
+        void insertAfter(DataType data);
+        void insertBefore(DataType data);
 
-    DataType& data() { return _data; };
-    DNode<DataType>*& next() { return _next; };
-    DNode<DataType>*& previous() { return _previous; };
-};
+        DataType& data() { return _data; };
+        DNode<DataType>*& next() { return _next; };
+        DNode<DataType>*& previous() { return _previous; };
+    };
+}
+
 
 #endif // _DNODE_HPP_
