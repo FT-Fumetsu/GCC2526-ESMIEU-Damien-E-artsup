@@ -9,6 +9,7 @@
 #include "TestTree.hpp"
 #include "TestBinaryTree.hpp"
 #include "TestGraph.hpp"
+#include "TestKruskalMST.hpp"
 
 namespace Data{
     template<class DataType>

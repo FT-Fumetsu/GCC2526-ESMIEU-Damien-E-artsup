@@ -6,7 +6,7 @@ namespace Data{
         : nbSommets(nbSommets), nbEdges(nbEdges)
     {
         edges.resize(nbEdges);
-        components.resize(nbSommets);
+        components.resize(nbSommets); // Privilégier reserve plutot que resize
 
         for (int i = 0; i < nbSommets; i++) {
             components[i] = i;
@@ -21,7 +21,7 @@ namespace Data{
     void Graph<DataType>::generateEdges() {
         for (int i = 0; i < nbEdges; i++) {
             edges[i].u = std::rand() % nbSommets;
-            edges[i].v = std::rand() % nbSommets;
+            edges[i].v = std::rand() % nbSommets; // privilégier std::uniform_int_distribution plutot que std::rand
         }
     }
 
@@ -88,10 +88,10 @@ namespace Data{
     void Graph<DataType>::displayComponents() const {
         for (int i = 0; i < nbSommets; i++) {
             std::cout << "Sommet " << i
-                    << " -> component " << components[i] << "\n";
+                    << " -> component " << components[i] << "\n"; // Déplacer les display dans le TestGraph
         }
     }
 
-template class Graph<int>;
+    template class Graph<int>;
 }
 

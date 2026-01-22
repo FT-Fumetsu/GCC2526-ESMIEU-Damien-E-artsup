@@ -28,6 +28,10 @@ namespace Data{
         //Test Parcours de Graphs
 
         TestGraph<DataType>::runGraphTest();
+
+        // Test Kruskal's MST Algorithm
+
+        TestKruskalMST<DataType>::runKruskalTest();
     }
 
     template class RunAllTests<int>;

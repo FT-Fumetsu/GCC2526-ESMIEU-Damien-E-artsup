@@ -297,6 +297,54 @@ src/Graph.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp-data.dir/build.make CMakeFiles/tp-data.dir/src/Graph.cpp.s
 .PHONY : src/Graph.cpp.s
 
+src/KruskalMST.o: src/KruskalMST.cpp.o
+.PHONY : src/KruskalMST.o
+
+# target to build an object file
+src/KruskalMST.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp-data.dir/build.make CMakeFiles/tp-data.dir/src/KruskalMST.cpp.o
+.PHONY : src/KruskalMST.cpp.o
+
+src/KruskalMST.i: src/KruskalMST.cpp.i
+.PHONY : src/KruskalMST.i
+
+# target to preprocess a source file
+src/KruskalMST.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp-data.dir/build.make CMakeFiles/tp-data.dir/src/KruskalMST.cpp.i
+.PHONY : src/KruskalMST.cpp.i
+
+src/KruskalMST.s: src/KruskalMST.cpp.s
+.PHONY : src/KruskalMST.s
+
+# target to generate assembly for a file
+src/KruskalMST.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp-data.dir/build.make CMakeFiles/tp-data.dir/src/KruskalMST.cpp.s
+.PHONY : src/KruskalMST.cpp.s
+
+src/PointSet.o: src/PointSet.cpp.o
+.PHONY : src/PointSet.o
+
+# target to build an object file
+src/PointSet.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp-data.dir/build.make CMakeFiles/tp-data.dir/src/PointSet.cpp.o
+.PHONY : src/PointSet.cpp.o
+
+src/PointSet.i: src/PointSet.cpp.i
+.PHONY : src/PointSet.i
+
+# target to preprocess a source file
+src/PointSet.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp-data.dir/build.make CMakeFiles/tp-data.dir/src/PointSet.cpp.i
+.PHONY : src/PointSet.cpp.i
+
+src/PointSet.s: src/PointSet.cpp.s
+.PHONY : src/PointSet.s
+
+# target to generate assembly for a file
+src/PointSet.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp-data.dir/build.make CMakeFiles/tp-data.dir/src/PointSet.cpp.s
+.PHONY : src/PointSet.cpp.s
+
 src/RunAllTests.o: src/RunAllTests.cpp.o
 .PHONY : src/RunAllTests.o
 
@@ -392,6 +440,30 @@ src/SNode.s: src/SNode.cpp.s
 src/SNode.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp-data.dir/build.make CMakeFiles/tp-data.dir/src/SNode.cpp.s
 .PHONY : src/SNode.cpp.s
+
+src/SVGExporter.o: src/SVGExporter.cpp.o
+.PHONY : src/SVGExporter.o
+
+# target to build an object file
+src/SVGExporter.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp-data.dir/build.make CMakeFiles/tp-data.dir/src/SVGExporter.cpp.o
+.PHONY : src/SVGExporter.cpp.o
+
+src/SVGExporter.i: src/SVGExporter.cpp.i
+.PHONY : src/SVGExporter.i
+
+# target to preprocess a source file
+src/SVGExporter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp-data.dir/build.make CMakeFiles/tp-data.dir/src/SVGExporter.cpp.i
+.PHONY : src/SVGExporter.cpp.i
+
+src/SVGExporter.s: src/SVGExporter.cpp.s
+.PHONY : src/SVGExporter.s
+
+# target to generate assembly for a file
+src/SVGExporter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp-data.dir/build.make CMakeFiles/tp-data.dir/src/SVGExporter.cpp.s
+.PHONY : src/SVGExporter.cpp.s
 
 src/TestArray.o: src/TestArray.cpp.o
 .PHONY : src/TestArray.o
@@ -489,6 +561,30 @@ src/TestGraph.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp-data.dir/build.make CMakeFiles/tp-data.dir/src/TestGraph.cpp.s
 .PHONY : src/TestGraph.cpp.s
 
+src/TestKruskalMST.o: src/TestKruskalMST.cpp.o
+.PHONY : src/TestKruskalMST.o
+
+# target to build an object file
+src/TestKruskalMST.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp-data.dir/build.make CMakeFiles/tp-data.dir/src/TestKruskalMST.cpp.o
+.PHONY : src/TestKruskalMST.cpp.o
+
+src/TestKruskalMST.i: src/TestKruskalMST.cpp.i
+.PHONY : src/TestKruskalMST.i
+
+# target to preprocess a source file
+src/TestKruskalMST.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp-data.dir/build.make CMakeFiles/tp-data.dir/src/TestKruskalMST.cpp.i
+.PHONY : src/TestKruskalMST.cpp.i
+
+src/TestKruskalMST.s: src/TestKruskalMST.cpp.s
+.PHONY : src/TestKruskalMST.s
+
+# target to generate assembly for a file
+src/TestKruskalMST.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp-data.dir/build.make CMakeFiles/tp-data.dir/src/TestKruskalMST.cpp.s
+.PHONY : src/TestKruskalMST.cpp.s
+
 src/TestSLinkedList.o: src/TestSLinkedList.cpp.o
 .PHONY : src/TestSLinkedList.o
 
@@ -585,6 +681,30 @@ src/TreeIterator.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp-data.dir/build.make CMakeFiles/tp-data.dir/src/TreeIterator.cpp.s
 .PHONY : src/TreeIterator.cpp.s
 
+src/WeightedGraph.o: src/WeightedGraph.cpp.o
+.PHONY : src/WeightedGraph.o
+
+# target to build an object file
+src/WeightedGraph.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp-data.dir/build.make CMakeFiles/tp-data.dir/src/WeightedGraph.cpp.o
+.PHONY : src/WeightedGraph.cpp.o
+
+src/WeightedGraph.i: src/WeightedGraph.cpp.i
+.PHONY : src/WeightedGraph.i
+
+# target to preprocess a source file
+src/WeightedGraph.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp-data.dir/build.make CMakeFiles/tp-data.dir/src/WeightedGraph.cpp.i
+.PHONY : src/WeightedGraph.cpp.i
+
+src/WeightedGraph.s: src/WeightedGraph.cpp.s
+.PHONY : src/WeightedGraph.s
+
+# target to generate assembly for a file
+src/WeightedGraph.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp-data.dir/build.make CMakeFiles/tp-data.dir/src/WeightedGraph.cpp.s
+.PHONY : src/WeightedGraph.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -639,6 +759,12 @@ help:
 	@echo "... src/Graph.o"
 	@echo "... src/Graph.i"
 	@echo "... src/Graph.s"
+	@echo "... src/KruskalMST.o"
+	@echo "... src/KruskalMST.i"
+	@echo "... src/KruskalMST.s"
+	@echo "... src/PointSet.o"
+	@echo "... src/PointSet.i"
+	@echo "... src/PointSet.s"
 	@echo "... src/RunAllTests.o"
 	@echo "... src/RunAllTests.i"
 	@echo "... src/RunAllTests.s"
@@ -651,6 +777,9 @@ help:
 	@echo "... src/SNode.o"
 	@echo "... src/SNode.i"
 	@echo "... src/SNode.s"
+	@echo "... src/SVGExporter.o"
+	@echo "... src/SVGExporter.i"
+	@echo "... src/SVGExporter.s"
 	@echo "... src/TestArray.o"
 	@echo "... src/TestArray.i"
 	@echo "... src/TestArray.s"
@@ -663,6 +792,9 @@ help:
 	@echo "... src/TestGraph.o"
 	@echo "... src/TestGraph.i"
 	@echo "... src/TestGraph.s"
+	@echo "... src/TestKruskalMST.o"
+	@echo "... src/TestKruskalMST.i"
+	@echo "... src/TestKruskalMST.s"
 	@echo "... src/TestSLinkedList.o"
 	@echo "... src/TestSLinkedList.i"
 	@echo "... src/TestSLinkedList.s"
@@ -675,6 +807,9 @@ help:
 	@echo "... src/TreeIterator.o"
 	@echo "... src/TreeIterator.i"
 	@echo "... src/TreeIterator.s"
+	@echo "... src/WeightedGraph.o"
+	@echo "... src/WeightedGraph.i"
+	@echo "... src/WeightedGraph.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
