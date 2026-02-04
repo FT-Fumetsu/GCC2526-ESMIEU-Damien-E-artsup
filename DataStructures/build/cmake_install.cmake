@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures
+# Install script for directory: /mnt/c/Users/esmie/Desktop/Cours/3emeannee/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/mnt/c/Users/esmie/Desktop/Cours/3emeannée/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/mnt/c/Users/esmie/Desktop/Cours/3emeannee/Cedric/GCC2526-ESMIEU-Damien-E-artsup/DataStructures/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

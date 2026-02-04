@@ -32,6 +32,10 @@ namespace Data{
         // Test Kruskal's MST Algorithm
 
         TestKruskalMST<DataType>::runKruskalTest();
+
+        // Test Dijkstra's Shortest Path Algorithm
+
+        TestDijkstra<DataType>::runDijkstraTest();
     }
 
     template class RunAllTests<int>;
